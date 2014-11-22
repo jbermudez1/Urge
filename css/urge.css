@@ -188,8 +188,19 @@ opacity: 0.3;
   padding: 1.5em;
 }
 
+.boxMision {
+  background-image: url(../img/mision.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 134px;
+ }
 
-
+.boxVision {
+  background-image: url(../img/vision.png);
+  background-size: cover;
+  background-position: top;
+  min-height: 134px;
+ }
 
 
 
