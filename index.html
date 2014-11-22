@@ -4,12 +4,12 @@
        <title>Título</title>
        <meta charset="UTF-8" />
        <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Urge</title>
+       <title>Comisión estatal de gestión empresarial y reforma regulatoria.</title>
        <!-- estilos -->
        <link rel="stylesheet" type="text/css" href="css/normalize.css">
        <link rel="stylesheet" type="text/css" href="css/urge.css">
        <link rel="stylesheet" type="text/css" href="css/medias.css">
-
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -36,7 +36,11 @@
                     <article class="mensaje">
                       <span class="t2">EN SINALOA, HAY</span><br>
                       <span class="t1">FACILIDAD PARA HACER NEGOCIOS</span><br><br>
-                      <p class="t2">Encuentra rapidamente el tramite que buscas, por sector, rubro, o tamaño de tu empresa.</p>
+                      <p class="t2">Encuentra rapidamente el trámite que buscas, por sector, rubro, o tamaño de tu empresa.</p>
+                    <article class="redes visible-xs">
+                      <a hreft=""><i class="fa fa-facebook fa-2x"></i></a>
+                      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  </article>
                     </article>
                     <article class="iconos">
                       <div class="row text-center">
@@ -51,18 +55,23 @@
                       </div>
                     </article>
                     <article class="buscador">
-                        <form class="form-inline" role="form">
-                       
-                          <div class="form-group">
-                            
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Eje. Permiso de construcción">
-                          </div>
-                          <button type="submit" class="btn btn-encontrar">Encontrar</button>
+                        <form class="" role="form">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-9">
+                               <input type="text" class="form-control" id="inputPassword2" placeholder="Eje. Permiso de construcción">
+                             </div>
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <button type="submit" class="btn btn-encontrar">Encontrar</button>
+                            </div>
+                           </div>
                         </form>
                     </article>
                 </div>
-                <div class="col-sm-6">
-                  <article class="redes"></article>
+                <div class="col-sm-6 hidden-xs">
+                  <article class="redes">
+                    <a hreft=""><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                  </article>
                 </div>
 
             </div>
@@ -71,16 +80,65 @@
         </section>
         <section class="complemento">
           <div class="container">
-            <span>Noticias</span>
+            <span class="t2 fverde">Más información.- </span>Enterate como tener mayor prbecho del instituto.
               <article class="accesos">
-                <div class="row">
-                    <div class="col-sm-4">4</div>
-                    <div class="col-sm-2">2</div>
-                    <div class="col-sm-2">2</div>
-                    <div class="col-sm-2">2</div>
-                    <div class="col-sm-2">2</div>
-                </div>
+                <div class="row boxes">
+                  <!--  -->
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="box">
+                        <!-- div class="boxHeader bglila"></div> -->
+                        <div class="boxContainer boxFirst"></div>
+                        <div class="firsBoxContainer">
+                          A través del programa Mujeres Moviendo México el INADEM te ayuda a crear, crecer y consolidar tu empresa.
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-xs-6 col-sm-2">
+                      <div class="box">
+                        <div class="boxHeader bgverde"></div>
+                        <div class="boxContainer">
+                          <p class="tituloNoticia">Vinculación</p>
+                          <img class="img-responsive" src="img/n1.jpg">
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-xs-6 col-sm-2">
+                      <div class="box">
+                        <div class="boxHeader bgnaranja"></div>
+                        <div class="boxContainer">
+                          <p class="tituloNoticia">Guía de tramites</p>
+                          <img class="img-responsive" src="img/n2.jpg">
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-xs-6 col-sm-2">
+                      <div class="box">
+                        <div class="boxHeader bglila"></div>
+                        <div class="boxContainer">
+                          <p class="tituloNoticia">Apoyos economicos</p>
+                          <img class="img-responsive" src="img/n3.jpg">
+                        </div>
+                      </div>
+                    </div>
+                    <!--  -->
+                    <div class="col-xs-6 col-sm-2">
+                      <div class="box">
+                        <div class="boxHeader bgazul"></div>
+                        <div class="boxContainer">
+                          <p class="tituloNoticia">Trámites en riesgo</p>
+                          <img class="img-responsive" src="img/n4.jpg">
+                        </div>
+                      </div>
 
+                    </div>
+                </div>
+              </article>
+              <article class="noticias">
+                <p class="verNoticias text-center">
+                  <a href="#">Ver noticias</p></a>
               </article>
           </div>
         </section>
@@ -89,11 +147,24 @@
 
        <footer>
         <div class="container">
-          footer
+          <div class="row">
+            <div class=" col-xs-6 col-sm-4 ">
+              <img class="img-responsive" src="img/desarrollo.jpg">
+            </div>
+             <div class="col-xs-6 col-sm-4">
+              <img class="img-responsive"  src="img/sinaloa.jpg">
+            </div>
+
+             <div class="col-sm-4">
+              <p class="copy">Comisión estatal de gestión empresarial y reforma regulatoria. 2015</p>
+            <!--   <img src="img/mover.jpg"> -->
+            </div>
+          </div>
         </div>
        </footer>
 
  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="js/urge.js"></script>
   </body>
 </html>
 

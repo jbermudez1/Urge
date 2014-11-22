@@ -4,10 +4,16 @@
 	text-align: left;
 	float: left;
 }
+.logoPrincipal img {
+    max-width: 100%;
+}
 .contenido {
 	text-align: left;
 	  background-position: right bottom;
 
+}
+.redes {
+  text-align: right;
 }
 /*FUENTES*/
 
@@ -20,6 +26,10 @@
   font-weight: 300;
 }
 /**/
+.copy {
+
+  text-align: right;
+}
 }
 
 /* Medium devices (desktops, 992px and up) */
