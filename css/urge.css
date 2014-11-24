@@ -12,6 +12,9 @@ body {
   
 
 }
+img {
+  display: inline-block !important;
+}
 footer {
   position: absolute;
   bottom: 0;
