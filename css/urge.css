@@ -102,6 +102,14 @@ margin-left: 10px;
 .fverde {
   color: #92b937
 }
+.fblanco{
+  color: #ffffff;
+}
+
+.fgris{
+  color: #3f3f3f;
+}
+
 .iconos {
   margin-bottom: 20px;
   margin-top: 40px;
@@ -142,12 +150,28 @@ opacity: 0.3;
 .bgazul{
   background-color: #2cbfe9;
 }
+.bgblanco{
+  background-color: white;
+}
+
+/*MARGENES*/
+.margen1{
+  margin-top: 20px;
+}
+
+
 /*NOTICIAS BOX*/
 .box {
   background-color: white;
   min-height: 190px;
   margin-top: 1em;
 }
+
+.boxT {
+  background-color: white;
+  margin-top: 1em;
+}
+
 .boxHeader {
   height: 4px;
   margin-bottom: 0.3em;
@@ -156,6 +180,13 @@ opacity: 0.3;
   padding: 1em;
   text-align: center;
 }
+
+.boxContainer2 {
+  padding: 0.2em;
+  text-align: text-left;
+  padding-left: 10px;
+}
+
 .tituloNoticia {
   color: gray;
   font-size: 1.2em;
@@ -191,6 +222,7 @@ opacity: 0.3;
   padding: 1.5em;
 }
 
+
 .boxMision {
   background-image: url(../img/mision.png);
   background-size: cover;
@@ -205,6 +237,11 @@ opacity: 0.3;
   min-height: 134px;
  }
 
+.boxTramite {
+  background-color: #ababab;
+  background-size: cover;
+  background-position: top;
+ }
 
 
 
