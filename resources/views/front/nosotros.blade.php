@@ -9,9 +9,6 @@
        <link rel="stylesheet" type="text/css" href="css/normalize.css">
        <link rel="stylesheet" type="text/css" href="css/urge.css">
        <link rel="stylesheet" type="text/css" href="css/medias.css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-
        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   </head>
 

@@ -9,22 +9,18 @@
     Mail: jbermudez@proyeccione.com
     Skype: j.bermudez.1
     ********************************************************************  -->
-       <meta charset="UTF-8" />
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-       <title>Comisión estatal de gestión empresarial y reforma regulatoria.</title>
-       <!-- estilos -->
-       <link rel="stylesheet" type="text/css" href="css/normalize.css">
-       <link rel="stylesheet" type="text/css" href="css/urge.css">
-       <link rel="stylesheet" type="text/css" href="css/medias.css">
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-
-       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Comisión estatal de gestión empresarial y reforma regulatoria.</title>
+        <!-- estilos -->
+        <link rel="stylesheet" type="text/css" href="css/urge.css">
+        <link rel="stylesheet" type="text/css" href="css/medias.css">
+        <link rel="stylesheet" href="css/app.css"/>
   </head>
 
   <body>
         <nav>
-        <!-- cargando menu -->
+            @include('front.base.menu')
         </nav>
 
         <section class="contenido">
