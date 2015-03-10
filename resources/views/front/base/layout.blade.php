@@ -9,7 +9,6 @@
     @yield('content')
 
     @include('front.base.footer')
-
     @include('front.base.script')
 </body>
 </html>
