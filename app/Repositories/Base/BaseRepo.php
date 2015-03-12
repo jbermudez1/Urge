@@ -6,9 +6,9 @@
  * Time: 13:02
  */
 
-namespace AdminFiles\Repositories\Base;
+namespace App\Repositories\Base;
 
-use AdminFiles\Repositories\Base\BaseInterface;
+use App\Repositories\Base\BaseInterface;
 
 abstract class BaseRepo implements BaseInterface {
     protected $repo;

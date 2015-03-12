@@ -9,9 +9,18 @@
 namespace App\Http\Controllers\Admin;
 
 
-class AdminController {
+use App\Helpers\AdminMenu;
+use App\Http\Controllers\Controller;
+
+class AdminController extends  Controller {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
-        return view('admin.home.home');
+        $menu = AdminMenu::menu();
+        return view('admin.home.home',compact('menu'));
     }
 }

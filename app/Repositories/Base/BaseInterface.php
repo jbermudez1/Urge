@@ -6,7 +6,7 @@
  * Time: 13:06
  */
 
-namespace AdminFiles\Repositories\Base;
+namespace App\Repositories\Base;
 
 interface BaseInterface {
 

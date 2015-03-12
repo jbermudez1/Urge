@@ -1,4 +1,4 @@
-<?php
+<?php namespace App\Repositories;
 use App\Repositories\Base\BaseRepo;
 use App\Models\Notice;
 

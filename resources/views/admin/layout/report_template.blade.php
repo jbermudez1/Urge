@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>@section('title') @show</title>
 
-    {{ HTML::style('http://fonts.googleapis.com/css?family=Open+Sans') }}
-    {{ HTML::style('/assets/css/normalize.css') }}
-    {{ HTML::style('/assets/css/bootstrap_report.min.css') }}
-    {{ HTML::style('/app/css/generic/report.css') }}
+    {{ Html::style('http://fonts.googleapis.com/css?family=Open+Sans') }}
+    {{ Html::style('/assets/css/normalize.css') }}
+    {{ Html::style('/assets/css/bootstrap_report.min.css') }}
+    {{ Html::style('/app/css/generic/report.css') }}
 
     @section('other-styles')
     @show

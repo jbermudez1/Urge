@@ -2,8 +2,8 @@
 
 namespace App\Repositories;
 
-use AdminFiles\Repositories\Base\BaseRepo;
-use AdminFiles\Models\User;
+use App\Repositories\Base\BaseRepo;
+use App\Models\User;
 
 /**
  * Created by PhpStorm.

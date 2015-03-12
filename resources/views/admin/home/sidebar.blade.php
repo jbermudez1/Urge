@@ -2,7 +2,7 @@
     <!-- Sidebar Brand -->
     <div id="sidebar-brand" class="themed-background">
         <a href="#" class="sidebar-title">
-            <i class="fa fa-cube"></i> <span class="sidebar-nav-mini-hide"><strong>Admin.</strong> de <strong>Archivos</strong></span>
+            <i class="fa fa-cube"></i> <span class="sidebar-nav-mini-hide"><strong>Admin.</strong> de <strong>URGE</strong></span>
         </a>
     </div>
     <!-- END Sidebar Brand -->
@@ -37,8 +37,8 @@
      <!-- Sidebar Extra Info -->
     <div id="sidebar-extra-info" class="sidebar-content sidebar-nav-mini-hide">
         <div class="text-center">
-            <small>Created with <i class="fa fa-heart text-danger"></i> by <a href="#" target="_blank">Adsum</a></small><br>
-            <small></span> &copy; <a href="#" target="_blank">Administrador de Archivos</a></small>
+            <small>Created with <i class="fa fa-heart text-danger"></i> by <a href="http://www.proyeccione.com" target="_blank">Proyeccione</a></small><br>
+            <small></span> &copy; <a href="#" target="_blank">Administrador de URGE</a></small>
         </div>
     </div>
     <!-- END Sidebar Extra Info -->

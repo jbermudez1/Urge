@@ -10,11 +10,6 @@ use  App\Http\Controllers\Controller;
 
 class FrontController extends Controller {
 
-    function __construct()
-    {
-        $this->middleware('guest');
-    }
-
     function getHome()
     {
         return view('front.index');

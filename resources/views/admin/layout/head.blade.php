@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     <title>
-        Administrador de Archivos
+        Administrador de URGE
     </title>
 
     <meta name="description" content="Seguridad y Poder es una aplicacion para monitoreo de alertas">
@@ -26,12 +26,12 @@
     <!-- END Icons -->
 
     <!-- Stylesheets -->
-    {!! HTML::style('/css/app.css') !!}
-    {!! HTML::style('/assets/css/plugins.css') !!}
-    {!! HTML::style('/assets/css/main.css') !!}
-    {!! HTML::style('/assets/css/themes.css') !!}
-    {!! HTML::style('/assets/css/themes/flat.css') !!}
-    {!! HTML::style('/css/app2.css') !!}
+    {!! Html::style('/css/app.css') !!}
+    {!! Html::style('/assets/css/plugins.css') !!}
+    {!! Html::style('/assets/css/main.css') !!}
+    {!! Html::style('/assets/css/themes.css') !!}
+    {!! Html::style('/assets/css/themes/flat.css') !!}
+    {!! Html::style('/css/app2.css') !!}
     <!-- END Stylesheets -->
 
     <!-- Modernizr (browser feature detection library) -->
