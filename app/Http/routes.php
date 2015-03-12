@@ -12,14 +12,13 @@
 */
 Route::get('/','Front\FrontController@getHome');
 
-Route::group(['prefix'=>'admin'], function(){
-//    Route::controllers([
-//        '/' => 'Auth\AuthController'
-//    ]);
-    Route::resource('notices','Admin\NoticesController');
+Route::group(['prefix'=>'admin','middleware'=>'auth','namespace'=>'Admin'], function(){
+    Route::get('/','AdminController@index');
+    Route::resource('notices','NoticesController');
 });
 
 Route::controllers([
+    'admin' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
     '/' => 'Front\FrontController',
-	'password' => 'Auth\PasswordController',
 ]);
