@@ -19,6 +19,11 @@ class Notice extends Model {
 
     public function user()
     {
-        return $this->hasOne('Admin\Models\User','id','id_user');
+        return $this->hasOne('App\Models\User','id','id_user');
+    }
+
+    public function getTagsDataAttribute()
+    {
+        return explode(',',$this->tags);
     }
 }

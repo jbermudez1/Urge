@@ -68,6 +68,12 @@ class FormX {
         return $this;
     }
 
+    public function tags($name,$label,$value='')
+    {
+        $this->body .= (string) view('admin.forms.tags',compact('name','label','value'));
+        return $this;
+    }
+
     public function __toString()
     {
         return (string) view('admin.forms.build',

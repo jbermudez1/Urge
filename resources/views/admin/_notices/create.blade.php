@@ -1,7 +1,7 @@
 @extends('admin.layout.modal')
 
 @section('modal-title')
-    Crear Categoria
+    Crear Noticia
 @stop
 
 @section('modal-id')
@@ -9,7 +9,7 @@
 @stop
 
 @section('modal-body')
-    {!! Form::open(['url' => 'categories','id'=>'form-create','method' => 'POST','class'=>'form-horizontal']) !!}
+    {!! Form::open(['url' => 'admin/notices','id'=>'form-create','method' => 'POST','class'=>'form-horizontal']) !!}
         {!! $fields !!}
     {!! Form::close() !!}
 @stop

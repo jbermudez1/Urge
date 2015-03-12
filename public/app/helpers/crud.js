@@ -28,7 +28,7 @@ var CRUD = function(){
         uploadImage: function(e) {
             var file, fr, holder,label,input;
             file = e.target.files[0];
-            holder = $(this).parent().parent().parent().parent().find('.holder');
+            holder = $(this).parent().parent().parent().parent().find('.file-image-holder');
             input = $(this).parent().parent().parent().find('input[type=text]');
             label = $(e.target).val().replace(/\\/g, '/').replace(/.*\//, '');
             if (file) {

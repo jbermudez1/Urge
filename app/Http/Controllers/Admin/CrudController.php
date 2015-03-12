@@ -1,4 +1,7 @@
 <?php namespace App\Http\Controllers\Admin;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
 /**
  * Created by PhpStorm.
  * User: YOEL
@@ -6,7 +9,7 @@
  * Time: 11:04
  */
 
-class CrudController {
+class CrudController extends Controller {
     protected $rules = array();
     protected $repo;
     protected $module = '';
