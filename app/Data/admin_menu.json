@@ -1,0 +1,14 @@
+{
+  "Usuarios": {
+    "code"  : "001",
+    "route" : "users",
+    "icon"  : "users",
+    "type"  : "administrator"
+  },
+  "Noticias": {
+    "code"  : "002",
+    "route" : "notices",
+    "icon"  : "list",
+    "type"  : "administrator"
+  }
+}
