@@ -15,4 +15,11 @@ class NoticeRepo extends BaseRepo {
     {
         return new Notice();
     }
+
+    public function getOrderByDate()
+    {
+        return $this->getModel()
+                    ->orderBy('created_at','DESC')
+                    ->get();
+    }
 }

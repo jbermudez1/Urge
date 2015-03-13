@@ -17,6 +17,7 @@ class CreateNoticesTable extends Migration {
 			$table->increments('id');
             $table->string('image');
             $table->string('title');
+            $table->string('place');
             $table->text('description');
             $table->string('tags');
             $table->integer('id_user')->unsigned();

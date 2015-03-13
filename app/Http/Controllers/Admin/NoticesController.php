@@ -106,6 +106,7 @@ class NoticesController extends CrudController {
             return FormX::make()
                 ->hidden('id_user',$data->id_user)
                 ->input('title','Titulo:','Titulo',$data->title)
+                ->input('place','Lugar:','Lugar',$data->place)
                 ->textarea('description','Descripcion:','Ingrese Descripcion',$data->description)
                 ->tags('tags','Tags:',$data->tags)
                 ->file_image('image','Imagen:',$data->image);
@@ -115,6 +116,7 @@ class NoticesController extends CrudController {
             return FormX::make()
                 ->hidden('id_user',\Auth::id())
                 ->input('title','Titulo:','Titulo')
+                ->input('place','Lugar:','Lugar')
                 ->textarea('description','Descripcion:','Ingrese Descripcion')
                 ->tags('tags','Tags:')
                 ->file_image('image','Imagen:');

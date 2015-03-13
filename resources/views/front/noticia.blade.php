@@ -4,7 +4,7 @@
     <section class="complemento">
         <div class="container">
             <span class="t2 fverde">{{ $notice->title }}</span><br>
-            Lugar donde se  origino la noticia.
+            {{ $notice->place}}
 
             <div class="viewNoticias">
                 <!-- primera columna de noticia ULTIMA -->
@@ -18,9 +18,6 @@
                                 {{ $notice->description }}
                             </p>
                         </div>
-                        <!--                       <div class="verNew">
-                                              Links de referencia
-                                              </div> -->
                     </div>
                 </div>
 

@@ -1,6 +1,6 @@
 @extends('front.base.layout')
 
-@section('content')
+    @section('content')
     <section class="contenidoInterno">
         <div class="container">
             <div class="row">

@@ -33,7 +33,7 @@ class FrontController extends Controller {
 
     function getNoticias()
     {
-        $notices = $this->noticeRepo->getAll();
+        $notices = $this->noticeRepo->getOrderByDate();
         return view('front.noticias',compact('notices'));
     }
 

@@ -10,6 +10,7 @@
 @section('list-content-columns')
     <th class="text-center" style="width: 50px;">#</th>
     <th>Titulo</th>
+    <th>Lugar</th>
     <th>Descripcion</th>
     <th>Tags</th>
     <th>Usuario</th>
@@ -21,6 +22,7 @@
         <tr>
             <td class="text-center">{{ $key + 1 }}</td>
             <td>{{ $value->title }}</td>
+            <td>{{ $value->place }}</td>
             <td>{{ $value->description }}</td>
             <td>
                 @foreach($value->tags_data as $tag)
@@ -48,6 +50,9 @@
             'title':{
                 required : true
             },
+            'place':{
+                required : true
+            },
             'description'  : {
                 required  : true
             }
@@ -55,6 +60,9 @@
         Helper.messages = {
             'title':{
                 required: 'Debe ingresar un titulo'
+            },
+            'place':{
+                required: 'Debe ingresar un lugar'
             },
             'description' : {
                 'required' : 'Debe ingresar una descipcion'

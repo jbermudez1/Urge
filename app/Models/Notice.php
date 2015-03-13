@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Model;
 class Notice extends Model {
 
     protected $table ='notices';
-    protected $fillable = ['image','title','description','tags','id_user'];
+    protected $fillable = ['image','title','place','description','tags','id_user'];
     public $relations = ['user'];
     public $timestamps = true;
 
