@@ -11,7 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Comisión estatal de gestión empresarial y reforma regulatoria.</title>
     <!-- estilos -->
-    {!! Html::style('css/urge.css') !!}
-    {!! Html::style('css/medias.css') !!}
     {!! Html::style('css/app.css') !!}
+    {!! Html::style('css/medias.css') !!}
+    {!! Html::style('css/urge.css') !!}
+    {!! Html::style('css/estilos.css') !!}
+
 </head>

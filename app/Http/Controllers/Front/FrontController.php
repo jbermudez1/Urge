@@ -6,9 +6,15 @@
  * Time: 1:26
  */
 
+use App\Repositories\NoticeRepo;
 use  App\Http\Controllers\Controller;
 
 class FrontController extends Controller {
+    protected $noticeRepo;
+    public function __construct(NoticeRepo $noticeRepo)
+    {
+        $this->noticeRepo = $noticeRepo;
+    }
 
     function getHome()
     {
@@ -23,5 +29,11 @@ class FrontController extends Controller {
     function getOficinas()
     {
         return view('front.oficinas');
+    }
+
+    function getNoticias()
+    {
+        $notices = $this->noticeRepo->getAll();
+        return view('front.noticias',compact('notices'));
     }
 }

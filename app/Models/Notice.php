@@ -15,7 +15,7 @@ class Notice extends Model {
     protected $table ='notices';
     protected $fillable = ['image','title','description','tags','id_user'];
     public $relations = ['user'];
-    public $timestamps = false;
+    public $timestamps = true;
 
     public function user()
     {

@@ -1,0 +1,16 @@
+<div class="col-xs-12 col-sm-5 ">
+    <div class="boxNews firsNew">
+        <!-- insertar imagen con estilo -->
+        <div class="imgNewHor" style="background-image:url({{ $notice->image  }})"></div>
+        <div class="descNew">
+            <p class="fecha">{{ date('d/m/Y',strtotime($notice->created_at)) }}</p>
+            <p>
+                <b>{{ $notice->title }}</b>
+                {{ $notice->description }}
+            </p>
+        </div>
+        <div class="verNew">
+            <a href="noticas/{{ $notice->id }}">Leer</a>
+        </div>
+    </div>
+</div>
