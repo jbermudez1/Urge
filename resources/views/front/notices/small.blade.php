@@ -1,3 +1,8 @@
+@if($count==1)
+    <div class="col-xs-12 col-sm-7">
+        <div class="row">
+@endif
+
 <div class="col-sm-6">
     <div class="boxNews">
         <div class="columna">
@@ -14,3 +19,8 @@
         </div>
     </div>
 </div>
+
+@if($count==2)
+        </div>
+    </div>
+@endif

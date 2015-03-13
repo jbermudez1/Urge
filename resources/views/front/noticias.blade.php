@@ -35,7 +35,7 @@
             <span class="t2 fverde">Ultimas noticias.- </span>Enterate como tener mayor provecho del instituto.
 
             <div class="viewNoticias">
-                <?php $contador = 1; ?>
+                <?php $count = 1; ?>
                 @foreach($notices as $key => $notice)
                     @if($key%5==0)
                         @if($key>0)
@@ -44,19 +44,8 @@
                         <div class="row">
                         @include('front.notices.big',compact('notice'))
                     @else
-                        @if($contador==1)
-                            <div class="col-xs-12 col-sm-7">
-                                <div class="row">
-                                    @include('front.notices.small',compact('notice'))
-                                    <?php $contador = 2; ?>
-                        @else
-                            @include('front.notices.small',compact('notice'))
-                            <?php $contador = 1; ?>
-                        @endif
-
-                        @if(($key+1)==count($notices) || $contador==1)
-                            </div> </div>
-                            @endif
+                        @include('front.notices.small',compact('notice','count'))
+                        <?php $count = ($count==1) ? 2 : 1; ?>
                     @endif
                 @endforeach
             </div>
