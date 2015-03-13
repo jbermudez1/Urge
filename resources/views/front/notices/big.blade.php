@@ -10,7 +10,7 @@
             </p>
         </div>
         <div class="verNew">
-            <a href="noticas/{{ $notice->id }}">Leer</a>
+            <a href="noticia/{{ $notice->id }}">Leer</a>
         </div>
     </div>
 </div>

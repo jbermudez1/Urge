@@ -36,4 +36,10 @@ class FrontController extends Controller {
         $notices = $this->noticeRepo->getAll();
         return view('front.noticias',compact('notices'));
     }
+
+    function getNoticia($id)
+    {
+        $notice =  $this->noticeRepo->findOrFail($id);
+        return view('front.noticia',compact('notice'));
+    }
 }

@@ -14,7 +14,7 @@
                 <p>{{ $notice->title . ' ' . $notice->description }}</p>
             </div>
             <div class="verNew">
-                <a href="notices/{{ $notice->id }}">Leer</a>
+                <a href="noticia/{{ $notice->id }}">Leer</a>
             </div>
         </div>
     </div>
