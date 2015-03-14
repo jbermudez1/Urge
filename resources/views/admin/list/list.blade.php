@@ -8,9 +8,9 @@
         <div id="list" class="row">
             <div class="col-sm-12">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12 text-right">
                         @section('buttons')
-                            <a href="#modal-create" class="btn btn-effect-ripple btn-primary" data-toggle="modal">Crear</a>
+                            <a href="#modal-create" class="btn btn-effect-ripple btn-important" data-toggle="modal">Nueva Noticia</a>
                         @show
                     </div>
                 </div>

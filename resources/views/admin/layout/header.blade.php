@@ -17,7 +17,8 @@
         <!-- User Dropdown -->
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="assets/img/avatar.png" alt="avatar"/>
+               <i class="fa fa-power-off "></i>
+               <!--  <img src="assets/img/avatar.png" alt="avatar"/> -->
             </a>
             @include('admin.home.combo-user')
         </li>

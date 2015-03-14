@@ -11,7 +11,7 @@
     <th class="text-center" style="width: 50px;">#</th>
     <th>Titulo</th>
     <th>Lugar</th>
-    <th>Descripcion</th>
+    <th>Descripción</th>
     <th>Tags</th>
     <th>Usuario</th>
     <th class="text-center" style="width: 75px;"><i class="fa fa-flash"></i></th>

@@ -102,6 +102,11 @@
 html{
     height: 100%;
 }
+.btn-important{
+    font-size: 2em;
+    border: solid 1px gray;
+    color: gray
+}
 /* Main Structure */
 body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2250,7 +2255,7 @@ a.list-group-item.active > .badge {
 }
 
 .nav > li i {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .nav-pills > .active > a > .badge {
