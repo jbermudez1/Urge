@@ -27,7 +27,7 @@
                         </div>
                     </article>
                     <article id="filtroDos" class="iconos">
-                        <div class="row">
+  <!--                       <div class="row">
                             <div class="col-xs-3 ">
                                 <img src="img/icon2.png">
                                 <p></p>
@@ -35,7 +35,7 @@
                             <div class="col-xs-6">
                                 <p>Empresario</p>
                             </div>
-                        </div>
+                        </div> -->
                     </article>
                     <article class="buscador">
                         <form class="" role="form">

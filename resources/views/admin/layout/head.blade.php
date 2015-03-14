@@ -6,9 +6,7 @@
     <title>
         Administrador de URGE
     </title>
-
-    <meta name="description" content="Seguridad y Poder es una aplicacion para monitoreo de alertas">
-    <meta name="author" content="GTechnology">
+    <meta name="author" content="Proyeccione">
     <meta name="robots" content="noindex, nofollow">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>

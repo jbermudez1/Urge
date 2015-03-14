@@ -44,12 +44,12 @@
         <!-- Modernizr (browser feature detection library) -->
         <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body class="loginBg">
         <!-- Login Container -->
         <div id="login-container">
             <!-- Login Header -->
             <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
-                <strong>Administrador de URGE</strong>
+                <strong>URGE</strong>
             </h1>
             <!-- END Login Header -->
 
