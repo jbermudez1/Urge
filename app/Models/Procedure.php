@@ -8,14 +8,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Procedure extends Model {
+class Procedure extends BaseModel {
 
     protected $table ='procedures';
     protected $fillable = ['description'];
-
-    public $relations = [];
-    public $timestamps = true;
 
 }

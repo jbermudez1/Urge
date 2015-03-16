@@ -8,15 +8,13 @@
 
 namespace App\Models;
 
+use App\Models\BaseModel;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Guide  extends Model{
+class Guide  extends BaseModel {
     protected $table = 'guides';
     protected $fillable = ['description','id_user','id_category_guide'];
 
     public $relations =['user','categoryguide'];
-    public $timestamps = true;
 
     public function user()
     {

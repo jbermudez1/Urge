@@ -8,14 +8,11 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Town extends Model {
+class Town extends BaseModel {
 
     protected $table = 'towns';
     protected $fillable = ['description','observation'];
-
-    public $relations = [];
-    public $timestamps = true;
 
 }
