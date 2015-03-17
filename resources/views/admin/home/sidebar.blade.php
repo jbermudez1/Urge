@@ -2,7 +2,7 @@
     <!-- Sidebar Brand -->
     <div id="sidebar-brand" class="themed-background">
         <a href="#" class="sidebar-title">
-           <!--  <i class="fa fa-cube"></i>  --><span class="sidebar-nav-mini-hide"><strong>Admin.</strong> de <strong>URGE</strong></span>
+           <!--  <i class="fa fa-cube"></i>  --><span class="sidebar-nav-mini-hide"><strong>URGE</strong></span>
         </a>
     </div>
     <!-- END Sidebar Brand -->

@@ -10,5 +10,29 @@
     "route" : "notices",
     "icon"  : "list",
     "type"  : "administrator"
+  },
+  "Municipios": {
+    "code"  : "003",
+    "route" : "towns",
+    "icon"  : "building",
+    "type"  : "administrator"
+  },
+  "Tramites": {
+    "code"  : "004",
+    "route" : "procedures",
+    "icon"  : "book",
+    "type"  : "administrator"
+  },
+  "Categorias de Guias": {
+    "code"  : "005",
+    "route" : "categories",
+    "icon"  : "list",
+    "type"  : "administrator"
+  },
+  "Categorias": {
+    "code"  : "005",
+    "route" : "categories",
+    "icon"  : "list",
+    "type"  : "administrator"
   }
 }
