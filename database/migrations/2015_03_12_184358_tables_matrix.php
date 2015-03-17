@@ -25,7 +25,8 @@ class TablesMatrix extends Migration {
         Schema::create('procedures', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->string('description');
+            $table->string('title');
+            $table->text('description');
             $table->enum('type',['town','state']);
             $table->timestamps();
         });
@@ -95,8 +96,9 @@ class TablesMatrix extends Migration {
 	 */
 	public function down()
 	{
-        Schema::drop('towns');
         Schema::drop('guideprocedures');
+        Schema::drop('procedures');
+        Schema::drop('towns');
         Schema::drop('categoryguides');
         Schema::drop('guides');
     }

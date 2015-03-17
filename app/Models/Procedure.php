@@ -13,6 +13,6 @@ use App\Models\BaseModel;
 class Procedure extends BaseModel {
 
     protected $table ='procedures';
-    protected $fillable = ['description'];
+    protected $fillable = ['title','description','type'];
 
 }
