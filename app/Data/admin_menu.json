@@ -8,7 +8,7 @@
   "Noticias": {
     "code"  : "002",
     "route" : "notices",
-    "icon"  : "list",
+    "icon"  : "newspaper-o",
     "type"  : "administrator"
   },
   "Municipios": {

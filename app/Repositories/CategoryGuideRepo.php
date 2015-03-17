@@ -6,7 +6,7 @@
  * Time: 0:10
  */
 
-namespace app\Repositories;
+namespace App\Repositories;
 
 
 use App\Models\CategoryGuide;
