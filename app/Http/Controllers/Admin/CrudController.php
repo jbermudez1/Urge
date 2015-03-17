@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Helpers\FunctionX;
 
 /**
  * Created by PhpStorm.
@@ -141,8 +142,14 @@ class CrudController extends Controller {
      */
     public function destroy($id)
     {
-        $this->repo->delete($id);
-        return ['success'=>'true','message'=>'Registro eliminado exitosamente'];
+        if($this->repo->delete($id))
+        {
+            return ['success'=>'true','message'=>'Registro eliminado exitosamente'];
+        }
+        else
+        {
+            return ['success'=>'false','message'=>'Ocurrio un error al intentar ser eliminado'];
+        }
     }
 
 }

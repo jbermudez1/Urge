@@ -15,6 +15,7 @@ Route::get('/','Front\FrontController@getHome');
 Route::group(['prefix'=>'admin','middleware'=>'auth','namespace'=>'Admin'], function(){
     Route::get('/','AdminController@index');
     Route::resource('notices','NoticesController');
+    Route::resource('users','UsersController');
 });
 
 Route::controllers([

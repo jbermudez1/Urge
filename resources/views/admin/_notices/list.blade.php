@@ -4,6 +4,10 @@
     Noticias
 @stop
 
+@section('button-create-text')
+    Nueva Noticia
+@stop
+
 @section('list-content')
     @parent
 

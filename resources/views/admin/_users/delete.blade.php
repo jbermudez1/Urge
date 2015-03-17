@@ -9,7 +9,7 @@
 @stop
 
 @section('modal-body')
-    {!! Form::open(['route' => ['users.destroy', $data->id],'id'=>'form-delete','method' => 'DELETE','class'=>'form-horizontal']) !!}
+    {!! Form::open(['route' => ['admin.users.destroy', $data->id],'id'=>'form-delete','method' => 'DELETE','class'=>'form-horizontal']) !!}
     ¿ Desea eliminar el registro ?
     {!! Form::close() !!}
 @stop

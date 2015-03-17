@@ -9,7 +9,7 @@
 @stop
 
 @section('modal-body')
-    {!! Form::open(['url' => 'users','id'=>'form-create','method' => 'POST','class'=>'form-horizontal']) !!}
+    {!! Form::open(['url' => 'admin/users','id'=>'form-create','method' => 'POST','class'=>'form-horizontal']) !!}
     {!! $fields !!}
     {!! Form::close() !!}
 @stop

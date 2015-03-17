@@ -9,7 +9,7 @@
 @stop
 
 @section('modal-body')
-    {!! Form::open(['route' => ['users.update', $data->id],'id'=>'form-edit','method' => 'PUT','class'=>'form-horizontal']) !!}
+    {!! Form::open(['route' => ['admin.users.update', $data->id],'id'=>'form-edit','method' => 'PUT','class'=>'form-horizontal']) !!}
     {!! $fields !!}
     {!! Form::close() !!}
 @stop
