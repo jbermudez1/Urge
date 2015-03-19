@@ -19,4 +19,9 @@ class TownRepo extends BaseRepo {
         return new Town();
     }
 
+    public function lists()
+    {
+        return $this->getModel()->orderBy('description','ASC')->lists('description','id');
+    }
+
 }

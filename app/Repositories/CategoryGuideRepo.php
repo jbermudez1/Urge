@@ -19,4 +19,11 @@ class CategoryGuideRepo extends BaseRepo {
         return new CategoryGuide();
     }
 
+    public function lists()
+    {
+        return $this->getModel()
+                    ->orderBy('description','ASC')
+                    ->lists('description','id');
+    }
+
 }

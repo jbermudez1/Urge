@@ -10,5 +10,7 @@
 
     @include('front.base.footer')
     @include('front.base.script')
+
+    @yield('other-scripts','')
 </body>
 </html>

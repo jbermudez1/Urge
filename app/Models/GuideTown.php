@@ -15,15 +15,20 @@ class GuideTown extends BaseModel {
     protected $table = 'guidetowns';
     protected $fillable = ['id_guide','id_town','description','url','tags'];
 
-    public $relations = ['guide','town'];
+    public $relations = ['guide','town','procedures'];
 
     public function guide()
     {
-        return $this->hasOne('App\Models\Guide','id','id_guide');
+        return $this->hasOne('App\Models\Guide','id','id_guide')->with('categoryguide');
     }
 
     public function town()
     {
         return $this->hasOne('App\Models\Town','id','id_town');
+    }
+
+    public function procedures()
+    {
+        return $this->hasMany('App\Models\GuideTown_Procedure','id_guide_town','id');
     }
 }

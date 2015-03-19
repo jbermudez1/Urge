@@ -14,34 +14,36 @@
                             <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
                         </article>
                     </article>
-                    <article id="filtroUno" class="iconos">
-                        <div class="row text-center">
-                            <div class="col-xs-6 primerIcono">
-                                <img src="img/icon1.png">
-                                <p>Soy emprendedor</p>
+                    <article id="" class="filtros">
+                        {!! Form::open(['url' => 'guias','id'=>'form-filtros','method' => 'POST']) !!}
+                            <div id="filtroUno" class="">
+                                <div class="row text-center">
+                                    <div class="col-xs-6 primerIcono">
+                                        <img class="filtro1" src="img/icon1.png">
+                                        <p>Soy emprendedor</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <img class="filtro1" id="empresario" src="img/icon2.png">
+                                        <p>Soy Empresario</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-xs-6">
-                                <img id="empresario" src="img/icon2.png">
-                                <p>Soy Empresario</p>
+                            <div id="filtroDos">
+                                <p>Selecciona tu <b>municipio.</b></p>
+                                {!! Form::select('idtown',array(''=>'Selecciona un municipio') + $towns,null,['class'=>'selects']) !!}
                             </div>
-                        </div>
-                    </article>
-                    <article id="filtroDos" class="iconos">
-  <!--                       <div class="row">
-                            <div class="col-xs-3 ">
-                                <img src="img/icon2.png">
-                                <p></p>
+                            <div id="filtroTres">
+                                <p>Selecciona tu <b>Rubro.</b></p>
+                                {!! Form::select('idcategoryguide',array(''=>'Selecciona un rubro') + $categoryguides,null,['class'=>'selects']) !!}
+                                <button type="submit" class="btn btn-primary">Encontrar</button>
                             </div>
-                            <div class="col-xs-6">
-                                <p>Empresario</p>
-                            </div>
-                        </div> -->
+                        {!! Form::close() !!}
                     </article>
                     <article class="buscador">
                         <form class="" role="form">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-9">
-                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Eje. Permiso de construcción">
+                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Eje. Permiso de construcción en Culiacán">
                                 </div>
                                 <div class="col-xs-12 col-sm-3 hidden-xs">
                                     <button type="submit" class="btn btn-encontrar">Encontrar</button>
@@ -125,5 +127,9 @@
             </article>
         </div>
     </section>
+@stop
+
+@section('other-scripts')
+    {!! Html::script('front/search.js') !!}
 @stop
     

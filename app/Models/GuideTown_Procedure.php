@@ -14,16 +14,16 @@ class GuideTown_Procedure extends BaseModel {
     protected $table = 'guidetowns_procedures';
     protected $fillable = ['id_guide_town','id_town','is_enabled'];
 
-    public $relations = ['guidetown','town'];
+    public $relations = ['guidetown','procedure'];
 
     public function guidetown()
     {
         return $this->hasOne('App\Models\GuideTown','id','id_guide_town');
     }
 
-    public function town()
+    public function procedure()
     {
-        return $this->hasOne('App\Models\Town','id','id_town');
+        return $this->hasOne('App\Models\Procedure','id','id_procedure');
     }
 
 }

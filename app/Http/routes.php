@@ -12,6 +12,10 @@
 */
 Route::get('/','Front\FrontController@getHome');
 
+// Routes for filter and search
+Route::post('/guias','Front\FrontController@getGuias');
+Route::get('/guias/{id}','Front\FrontController@getGuiaUnica');
+
 Route::group(['prefix'=>'admin','middleware'=>'auth','namespace'=>'Admin'], function(){
     Route::get('/','AdminController@index');
     Route::resource('categoryguides','CategoryGuidesController');
