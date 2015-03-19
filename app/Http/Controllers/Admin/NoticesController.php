@@ -17,7 +17,7 @@ class NoticesController extends CrudController {
 
     protected $rules = array(
         'id_user' => 'required',
-        'title'=> 'required',
+        'title' => 'required',
         'description' => 'required',
     );
     protected $module = '_notices';

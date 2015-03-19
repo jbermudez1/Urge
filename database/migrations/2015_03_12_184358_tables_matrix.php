@@ -63,7 +63,7 @@ class TablesMatrix extends Migration {
             $table->timestamps();
         });
         //Table Guide Procedures
-        Schema::create('guideprocedures', function(Blueprint $table)
+        Schema::create('guidetowns', function(Blueprint $table)
         {
             $table->increments('id');
 
@@ -72,11 +72,6 @@ class TablesMatrix extends Migration {
                 ->references('id')
                 ->on('guides');
 
-            $table->integer('id_procedure')->unsigned();
-            $table->foreign('id_procedure')
-                ->references('id')
-                ->on('procedures');
-
             $table->integer('id_town')->unsigned();
             $table->foreign('id_town')
                 ->references('id')
@@ -84,7 +79,20 @@ class TablesMatrix extends Migration {
 
             $table->string('url');
             $table->text('tags');
-            $table->boolean('is_enabled');
+            $table->timestamps();
+        });
+
+        Schema::create('guidetowns_procedures', function(Blueprint $table){
+            $table->increments('id');
+
+            $table->integer('id_guide_towns')->unsigned();
+            $table->foreign('id_guide_towns')->references('id')->on('guidetowns');
+
+            $table->integer('id_procedure')->unsigned();
+            $table->foreign('id_procedure')->references('id')->on('procedures');
+
+            $table->text('description');
+            $table->boolean('is_enabled')->default(false);
             $table->timestamps();
         });
 	}
@@ -96,11 +104,12 @@ class TablesMatrix extends Migration {
 	 */
 	public function down()
 	{
-        Schema::drop('guideprocedures');
+        Schema::drop('guidetowns_procedures');
+        Schema::drop('guidetowns');
         Schema::drop('procedures');
         Schema::drop('towns');
-        Schema::drop('categoryguides');
         Schema::drop('guides');
+        Schema::drop('categoryguides');
     }
 
 }

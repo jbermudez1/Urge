@@ -50,4 +50,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
             $this->attributes['password'] = bcrypt($value);
         }
     }
+
+
+
 }
