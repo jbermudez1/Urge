@@ -14,7 +14,11 @@ Route::get('/','Front\FrontController@getHome');
 
 Route::group(['prefix'=>'admin','middleware'=>'auth','namespace'=>'Admin'], function(){
     Route::get('/','AdminController@index');
+    Route::resource('categoryguides','CategoryGuidesController');
     Route::resource('notices','NoticesController');
+    Route::resource('procedures','ProceduresController');
+    Route::resource('towns','TownsController');
+    Route::resource('users','UsersController');
 });
 
 Route::controllers([

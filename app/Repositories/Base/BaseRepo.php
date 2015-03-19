@@ -63,9 +63,15 @@ abstract class BaseRepo implements BaseInterface {
     {
         if(is_numeric($entity))
             $entity = $this->findOrFail($entity);
-
-        $entity->delete();
-        return $entity;
+        try
+        {
+            $entity->delete();
+            return $entity;
+        }
+        catch(\Exception $e)
+        {
+            return null;
+        }
     }
 
     public function getAll()

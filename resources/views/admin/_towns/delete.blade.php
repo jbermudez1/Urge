@@ -1,7 +1,7 @@
 @extends('admin.layout.modal')
 
 @section('modal-title')
-    Eliminar Usuario
+    Eliminar Municipio
 @stop
 
 @section('modal-id')
@@ -9,7 +9,7 @@
 @stop
 
 @section('modal-body')
-    {!! Form::open(['route' => ['admin.users.destroy', $data->id],'id'=>'form-delete','method' => 'DELETE','class'=>'form-horizontal']) !!}
+    {!! Form::open(['route' => ['admin.towns.destroy', $data->id],'id'=>'form-delete','method' => 'DELETE','class'=>'form-horizontal']) !!}
     ¿ Desea eliminar el registro ?
     {!! Form::close() !!}
 @stop

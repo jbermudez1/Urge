@@ -8,12 +8,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 
-class Notice extends Model {
+class Notice extends BaseModel {
 
     protected $table ='notices';
     protected $fillable = ['image','title','place','description','tags','id_user'];
+
     public $relations = ['user'];
     public $timestamps = true;
 

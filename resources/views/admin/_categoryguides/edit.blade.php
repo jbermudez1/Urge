@@ -1,7 +1,7 @@
 @extends('admin.layout.modal')
 
 @section('modal-title')
-    Editar Usuario
+    Editar Categoria de Guia
 @stop
 
 @section('modal-id')
@@ -9,7 +9,7 @@
 @stop
 
 @section('modal-body')
-    {!! Form::open(['route' => ['admin.users.update', $data->id],'id'=>'form-edit','method' => 'PUT','class'=>'form-horizontal']) !!}
+    {!! Form::open(['route' => ['admin.categoryguides.update', $data->id],'id'=>'form-edit','method' => 'PUT','class'=>'form-horizontal']) !!}
     {!! $fields !!}
     {!! Form::close() !!}
 @stop

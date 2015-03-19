@@ -13,10 +13,9 @@ class TablesMatrix extends Migration {
 	public function up()
 	{
         //Table States
-        Schema::create('states', function(Blueprint $table)
+        Schema::create('towns', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->string('towns');
             $table->string('description');
             $table->string('observation');
             $table->timestamps();
@@ -26,7 +25,9 @@ class TablesMatrix extends Migration {
         Schema::create('procedures', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->string('description');
+            $table->string('title');
+            $table->text('description');
+            $table->enum('type',['town','state']);
             $table->timestamps();
         });
 
@@ -36,8 +37,8 @@ class TablesMatrix extends Migration {
         {
             $table->increments('id');
             $table->string('description');
-            $table->integer('iduser')->unsigned();
-            $table->foreign('iduser')
+            $table->integer('id_user')->unsigned();
+            $table->foreign('id_user')
                 ->references('id')
                 ->on('users');
             $table->timestamps();
@@ -48,29 +49,42 @@ class TablesMatrix extends Migration {
         {
             $table->increments('id');
             $table->string('description');
-            $table->integer('iduser')->unsigned();
-            $table->foreign('iduser')
+
+            $table->integer('id_user')->unsigned();
+            $table->foreign('id_user')
                 ->references('id')
                 ->on('users');
-            $table->integer('idcategoryguide')->unsigned();
-            $table->foreign('idcategoryguide')
+
+            $table->integer('id_category_guide')->unsigned();
+            $table->foreign('id_category_guide')
                 ->references('id')
                 ->on('categoryguides');
+
             $table->timestamps();
         });
         //Table Guide Procedures
         Schema::create('guideprocedures', function(Blueprint $table)
         {
             $table->increments('id');
-            $table->integer('idguide')->unsigned();
-            $table->foreign('idguide')
+
+            $table->integer('id_guide')->unsigned();
+            $table->foreign('id_guide')
                 ->references('id')
                 ->on('guides');
-            $table->integer('idprocedure')->unsigned();
-            $table->foreign('idprocedure')
+
+            $table->integer('id_procedure')->unsigned();
+            $table->foreign('id_procedure')
                 ->references('id')
                 ->on('procedures');
-            $table->boolean('isenabled');
+
+            $table->integer('id_town')->unsigned();
+            $table->foreign('id_town')
+                ->references('id')
+                ->on('towns');
+
+            $table->string('url');
+            $table->text('tags');
+            $table->boolean('is_enabled');
             $table->timestamps();
         });
 	}
@@ -82,8 +96,9 @@ class TablesMatrix extends Migration {
 	 */
 	public function down()
 	{
-        Schema::drop('states');
         Schema::drop('guideprocedures');
+        Schema::drop('procedures');
+        Schema::drop('towns');
         Schema::drop('categoryguides');
         Schema::drop('guides');
     }

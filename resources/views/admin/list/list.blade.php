@@ -10,7 +10,11 @@
                 <div class="row">
                     <div class="col-sm-12 text-right">
                         @section('buttons')
+<<<<<<< HEAD
                             <a href="#modal-create" class="btn btn-effect-ripple btn-important" data-toggle="modal">+ Noticia</a>
+=======
+                            <a href="#modal-create" class="btn btn-effect-ripple btn-important" data-toggle="modal">@yield('button-create-text','Nuevo')</a>
+>>>>>>> origin/master
                         @show
                     </div>
                 </div>
