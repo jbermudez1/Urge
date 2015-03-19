@@ -37,8 +37,8 @@
      <!-- Sidebar Extra Info -->
     <div id="sidebar-extra-info" class="sidebar-content sidebar-nav-mini-hide">
         <div class="text-center">
-            <small>Created with <i class="fa fa-heart text-danger"></i> by <a href="http://www.proyeccione.com" target="_blank">Proyeccione</a></small><br>
-            <small></span> &copy; <a href="#" target="_blank">Administrador de URGE</a></small>
+            <small>Design in <i class="fa fa-heart text-danger"></i></small><br>
+                <a href="http://proyeccione.com" target="_blank"><img class="logoProyeccione" src="/img/proyeccione.svg"></a>
         </div>
     </div>
     <!-- END Sidebar Extra Info -->

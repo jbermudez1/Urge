@@ -28,6 +28,8 @@
         <!-- Stylesheets -->
         <!-- Bootstrap is included in its original form, unaltered -->
         <link rel="stylesheet" href="/css/app.css">
+                <link rel="stylesheet" href="/css/admin.css">
+
 
         <!-- Related styles of various icon packs and plugins -->
         <link rel="stylesheet" href="/assets/css/plugins.css">
@@ -39,6 +41,7 @@
 
         <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
         <link rel="stylesheet" href="/assets/css/themes.css">
+
         <!-- END Stylesheets -->
 
         <!-- Modernizr (browser feature detection library) -->
@@ -49,17 +52,17 @@
         <div id="login-container">
             <!-- Login Header -->
             <h1 class="h2 text-light text-center push-top-bottom animation-slideDown">
-                <strong>URGE</strong>
+                Administración Urge.
             </h1>
             <!-- END Login Header -->
 
             <!-- Login Block -->
             <div class="block animation-fadeInQuickInv">
-                <!-- Login Title -->
+                <!-- Login Title 
                 <div class="block-title">
                     <h2>Por favor ingresa</h2>
                 </div>
-                <!-- END Login Title -->
+              END Login Title -->
 
                 @if (count($errors) > 0)
                     <div class="alert alert-danger">
@@ -105,7 +108,9 @@
 
             <!-- Footer -->
             <footer class="text-muted text-center animation-pullUp">
-                <small><span id="year-copy"></span> &copy; <a href="http://www.proyeccione.com" target="_blank">Proyeccione</a></small>
+                <small>2015<span id="year-copy"></span> &copy; Design in</small><br>
+                <a href="http://proyeccione.com" target="_blank"><img class="logoProyeccione" src="/img/proyeccione.svg"></a>
+
             </footer>
             <!-- END Footer -->
         </div>

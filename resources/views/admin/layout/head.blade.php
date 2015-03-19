@@ -30,6 +30,8 @@
     {!! Html::style('/assets/css/themes.css') !!}
     {!! Html::style('/assets/css/themes/flat.css') !!}
     {!! Html::style('/css/app2.css') !!}
+    {!! Html::style('/css/admin.css') !!}
+
     <!-- END Stylesheets -->
 
     <!-- Modernizr (browser feature detection library) -->
