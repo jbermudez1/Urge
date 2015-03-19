@@ -6,9 +6,9 @@
             <span class="t2 fverde">URGE.- </span>Unidad Rápida de Gestión Empresarial.
             <article class="accesos">
                 <div class="row boxes">
-                    <div class="col-xs-12">
-                        <div class="box">
-                            <div class="row">
+                   <!--  <div class="col-xs-12"> -->
+                       <!--  <div class="box"> -->
+                            
                                 <div class="col-sm-5">
                                     <img class="img-responsive" src="img/nosotros.png">
                                 </div>
@@ -17,9 +17,9 @@
                                         <p class="text-left">La Comisión Estatal de Gestión Empresarial y Reforma Regulatoria es un órgano público descentralizado sectorizado a la Secretaría de Desarrollo Económico, cuyo objeto es coordinar, instrumentar, aplicar, dar seguimiento y evaluar el Programa Estatal de Gestión Empresarial y Reforma Regulatoria, así como orientar, promover, apoyar y fomentar el desarrollo de las actividades productivas, atender el sector empresarial y a los particulares en la gestión, asesoría de trámites y programas de los tres órdenes de gobierno.</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                       
+                       <!--  </div> -->
+                    <!-- </div> -->
                 </div>
 
                 <div class="row boxes">

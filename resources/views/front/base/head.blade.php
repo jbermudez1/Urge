@@ -12,8 +12,8 @@
     <title>Comisión estatal de gestión empresarial y reforma regulatoria.</title>
     <!-- estilos -->
     {!! Html::style('css/app.css') !!}
-    {!! Html::style('css/urge.css') !!}
     {!! Html::style('css/estilos.css') !!}
     {!! Html::style('css/medias.css') !!}
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 </head>
