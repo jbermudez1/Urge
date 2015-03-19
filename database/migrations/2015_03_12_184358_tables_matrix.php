@@ -77,6 +77,7 @@ class TablesMatrix extends Migration {
                 ->references('id')
                 ->on('towns');
 
+            $table->text('description');
             $table->string('url');
             $table->text('tags');
             $table->timestamps();
@@ -85,13 +86,12 @@ class TablesMatrix extends Migration {
         Schema::create('guidetowns_procedures', function(Blueprint $table){
             $table->increments('id');
 
-            $table->integer('id_guide_towns')->unsigned();
-            $table->foreign('id_guide_towns')->references('id')->on('guidetowns');
+            $table->integer('id_guide_town')->unsigned();
+            $table->foreign('id_guide_town')->references('id')->on('guidetowns');
 
             $table->integer('id_procedure')->unsigned();
             $table->foreign('id_procedure')->references('id')->on('procedures');
 
-            $table->text('description');
             $table->boolean('is_enabled')->default(false);
             $table->timestamps();
         });

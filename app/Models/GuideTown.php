@@ -10,21 +10,16 @@ namespace App\Models;
 
 use App\Models\BaseModel;
 
-class GuideProcedure extends BaseModel {
+class GuideTown extends BaseModel {
 
-    protected $table = 'guideprocedures';
-    protected $fillable = ['id_guide','id_procedure','id_town','url','tags','is_enabled'];
+    protected $table = 'guidetowns';
+    protected $fillable = ['id_guide','id_town','description','url','tags'];
 
-    public $relations = ['guide','procedure','town'];
+    public $relations = ['guide','town'];
 
     public function guide()
     {
         return $this->hasOne('App\Models\Guide','id','id_guide');
-    }
-
-    public function procedure()
-    {
-        return $this->hasOne('App\Models\Procedure','id','id_procedure');
     }
 
     public function town()

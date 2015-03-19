@@ -10,13 +10,14 @@ namespace App\Repositories;
 
 
 use App\Models\GuideProcedure;
+use App\Models\GuideTown;
 use App\Repositories\Base\BaseRepo;
 
-class GuideProcedureRepo extends BaseRepo {
+class GuideTownRepo extends BaseRepo {
 
     public function getModel()
     {
-        return new GuideProcedure();
+        return new GuideTown();
     }
 
 }

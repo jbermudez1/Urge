@@ -28,11 +28,5 @@
     "route" : "categoryguides",
     "icon"  : "list",
     "type"  : "administrator"
-  },
-  "Categorias": {
-    "code"  : "005",
-    "route" : "categories",
-    "icon"  : "list",
-    "type"  : "administrator"
   }
 }
