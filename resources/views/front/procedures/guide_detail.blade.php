@@ -32,7 +32,7 @@
                                         Estado
                                     @endif
                                 </td>
-                                <td><a href="#">Realizar Tramite</a></td>
+                                <td><a href="{{ $value->url }}" target="_blank">Realizar Tramite</a></td>
                             </tr>
                         @endforeach
                     </tbody>

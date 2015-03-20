@@ -78,7 +78,6 @@ class TablesMatrix extends Migration {
                 ->on('towns');
 
             $table->text('description');
-            $table->string('url');
             $table->text('tags');
             $table->timestamps();
         });
@@ -92,6 +91,7 @@ class TablesMatrix extends Migration {
             $table->integer('id_procedure')->unsigned();
             $table->foreign('id_procedure')->references('id')->on('procedures');
 
+            $table->string('url');
             $table->boolean('is_enabled')->default(false);
             $table->timestamps();
         });

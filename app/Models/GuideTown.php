@@ -13,7 +13,7 @@ use App\Models\BaseModel;
 class GuideTown extends BaseModel {
 
     protected $table = 'guidetowns';
-    protected $fillable = ['id_guide','id_town','description','url','tags'];
+    protected $fillable = ['id_guide','id_town','description','tags'];
 
     public $relations = ['guide','town','procedures'];
 
