@@ -15,7 +15,7 @@
                         <div class="descNew">
                             <p class="fecha">{{ date('d/m/Y',strtotime($notice->created_at)) }}</p>
                             <p>
-                                {{ $notice->description }}
+                                {!! $notice->description !!}
                             </p>
                         </div>
                     </div>
