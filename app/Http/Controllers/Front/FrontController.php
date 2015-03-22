@@ -36,7 +36,18 @@ class FrontController extends Controller {
         $idtown = $request->get('idtown');
         $idcategoryguide = $request->get('idcategoryguide');
 
-        $guides = $this->guideTownRepo->getGuides($idtown,$idcategoryguide);
+        $search = $request->get('search','');
+
+        if(trim($search)!="")
+        {
+            $guides = $this->guideTownRepo->getGuidesBySearch($search);
+        }
+        else
+        {
+            $guides = $this->guideTownRepo->getGuides($idtown,$idcategoryguide);
+        }
+
+
         return view('front.procedures.guides',compact('guides'));
     }
 

@@ -1,14 +1,21 @@
 $(function () {
-    $(".filtro1").click(function(){
-        $(".buscador").fadeOut();
-        $("#filtroUno").fadeOut(function(){
-            $("#filtroDos").fadeIn();
+    var $iconos = $('.filtro1'),
+        $buscador = $('.buscador'),
+        $filtro1 = $('#filtroUno'),
+        $filtro2 = $('#filtroDos'),
+        $filtro3 = $('#filtroTres');
+
+
+    $iconos.click(function(){
+        $buscador.fadeOut();
+        $filtro1.fadeOut(function(){
+            $filtro2.fadeIn();
         });
     });
 
-    $("#filtroDos > select").change(function(){
-        $("#filtroDos").fadeOut( function(){
-            $("#filtroTres").fadeIn();
+    $filtro2.find('.btn').click(function(){
+        $filtro2.fadeOut( function(){
+            $filtro3.fadeIn();
         });
     })
 });

@@ -21,19 +21,20 @@
                     </thead>
                     <tbody>
                         @foreach($guide_town->procedures as $value)
-                            {{--{{ dd($value) }}--}}
-                            <tr>
-                                <td>{{ $value->procedure->title }}</td>
-                                <td>{{ $value->procedure->description }}</td>
-                                <td>
-                                    @if($value->procedure->type == "town")
-                                        Municipio
-                                    @else
-                                        Estado
-                                    @endif
-                                </td>
-                                <td><a href="{{ $value->url }}" target="_blank">Realizar Tramite</a></td>
-                            </tr>
+                            @if($value->is_enabled)
+                                <tr>
+                                    <td>{{ $value->procedure->title }}</td>
+                                    <td>{{ $value->procedure->description }}</td>
+                                    <td>
+                                        @if($value->procedure->type == "town")
+                                            Municipio
+                                        @else
+                                            Estado
+                                        @endif
+                                    </td>
+                                    <td><a href="{{ $value->url }}" target="_blank">Realizar Tramite</a></td>
+                                </tr>
+                            @endif
                         @endforeach
                     </tbody>
                 </table>

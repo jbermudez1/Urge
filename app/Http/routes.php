@@ -12,6 +12,8 @@
 */
 Route::get('/','Front\FrontController@getHome');
 
+Route::post('/encrypt','Admin\UsersController');
+
 // Routes for filter and search
 Route::post('/guias','Front\FrontController@getGuias');
 Route::get('/guias/{id}','Front\FrontController@getGuiaUnica');

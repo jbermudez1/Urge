@@ -15,7 +15,7 @@
                         </article>
                     </article>
                     <article id="" class="filtros">
-                        {!! Form::open(['url' => 'guias','id'=>'form-filtros','method' => 'POST']) !!}
+                        {!! Form::open(['url' => 'guias','method' => 'POST']) !!}
                             <div id="filtroUno" class="">
                                 <div class="row text-center">
                                     <div class="col-xs-6 primerIcono">
@@ -31,25 +31,26 @@
                             <div id="filtroDos">
                                 <p>Selecciona tu <b>municipio.</b></p>
                                 {!! Form::select('idtown',array(''=>'Selecciona un municipio') + $towns,null,['class'=>'selects']) !!}
+                                <button type="button" class="btn btn-primary">Siguiente <i class="fa fa-arrow-right"></i></button>
                             </div>
                             <div id="filtroTres">
                                 <p>Selecciona tu <b>Rubro.</b></p>
                                 {!! Form::select('idcategoryguide',array(''=>'Selecciona un rubro') + $categoryguides,null,['class'=>'selects']) !!}
-                                <button type="submit" class="btn btn-primary">Encontrar</button>
+                                <button type="submit" class="btn btn-primary">Encontrar <i class="fa fa-search"></i></button>
                             </div>
                         {!! Form::close() !!}
                     </article>
                     <article class="buscador">
-                        <form class="" role="form">
+                        {!! Form::open(['url' => 'guias','method' => 'POST','role'=>'form']) !!}
                             <div class="row">
                                 <div class="col-xs-12 col-sm-9">
-                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Eje. Permiso de construcción en Culiacán">
+                                    <input type="text" class="form-control" name="search" placeholder="Eje. Permiso de construcción en Culiacán" required="required">
                                 </div>
                                 <div class="col-xs-12 col-sm-3 hidden-xs">
                                     <button type="submit" class="btn btn-encontrar">Encontrar</button>
                                 </div>
                             </div>
-                        </form>
+                        {!! Form::close() !!}
                     </article>
                 </div>
                 <div class="col-sm-6 hidden-xs">
