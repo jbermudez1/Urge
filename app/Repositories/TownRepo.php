@@ -8,7 +8,6 @@
 
 namespace App\Repositories;
 
-
 use App\Models\Town;
 use App\Repositories\Base\BaseRepo;
 

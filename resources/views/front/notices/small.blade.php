@@ -11,7 +11,8 @@
         <div class="columna">
             <div class="descNew">
                 <p class="fecha">{{ date('d/m/Y',strtotime($notice->created_at)) }}</p>
-                <p>{{ $notice->title . ' ' . $notice->description }}</p>
+                <p>{{ $notice->title }}</p>
+                {!! $notice->description !!}
             </div>
             <div class="verNew">
                 <a href="noticia/{{ $notice->id }}">Leer</a>

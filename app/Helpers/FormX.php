@@ -74,6 +74,12 @@ class FormX {
         return $this;
     }
 
+    public function editor($name,$label,$value='')
+    {
+        $this->body .= (string) view('admin.forms.editor',compact('name','label','value'));
+        return $this;
+    }
+
     public function __toString()
     {
         return (string) view('admin.forms.build',

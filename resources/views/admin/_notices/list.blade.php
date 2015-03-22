@@ -15,7 +15,6 @@
     <th class="text-center" style="width: 50px;">#</th>
     <th>Titulo</th>
     <th>Lugar</th>
-    <th>Descripción</th>
     <th>Tags</th>
     <th>Usuario</th>
     <th class="text-center" style="width: 75px;"><i class="fa fa-flash"></i></th>
@@ -27,7 +26,6 @@
             <td class="text-center">{{ $key + 1 }}</td>
             <td>{{ $value->title }}</td>
             <td>{{ $value->place }}</td>
-            <td>{{ $value->description }}</td>
             <td>
                 @foreach($value->tags_data as $tag)
                     <span class="label label-info">{{ $tag }}</span>
@@ -77,4 +75,5 @@
     })
 </script>
 {!! Html::script('app/helpers/crud_operate.js') !!}
+<script></script>
 @stop

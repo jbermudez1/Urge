@@ -76,6 +76,14 @@ var CRUD = function(){
                     data.append(input.prop('name'), input.val());
                 }
             });
+
+            for( var instance in CKEDITOR.instances) {
+                if(CKEDITOR.instances.hasOwnProperty(instance))
+                {
+                    data.append(instance,CKEDITOR.instances[instance].getData());
+                }
+            }
+
             return data;
         },
         action: function(form,callback){
