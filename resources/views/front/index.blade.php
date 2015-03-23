@@ -109,8 +109,10 @@
                         <div class="box">
                             <div class="boxHeader bglila"></div>
                             <div class="boxContainer">
-                                <p class="tituloNoticia">Apoyos economicos</p>
-                                <img class="img-responsive" src="img/n3.jpg">
+                                <a href="http://redfosin.com/" target="_blank">
+                                    <p class="tituloNoticia">Apoyos economicos</p>
+                                    <img class="img-responsive" src="img/n3.jpg">
+                                </a>
                             </div>
                         </div>
                     </div>

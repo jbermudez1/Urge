@@ -3,9 +3,16 @@
          <i class="fa fa-bars fa-2x"></i>
       </div>
         <ul>
-            <li>Inicio</li>
-            <li>Quienes Somos</li>
+            <li><a href="/home">Inicio</a></li>
+            <li><a href="/nosotros">Urge</a></li>
+            <li><a href="#">Trámites</a></li>
+            <li><a href="#">Regulaciones</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/oficinas">Oficinas</a></li>
         </ul>
+        <div class="copy">
+            2015. Design in <a href="http://proyeccione.com" target="_blank">Proyeccione</a>
+        </div>
     </div>
 <nav>
     <div class="container">
