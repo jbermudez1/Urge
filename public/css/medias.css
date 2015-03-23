@@ -1,3 +1,45 @@
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px){.logoPrincipal{ text-align:left;float:left}.logoPrincipal img{max-width:100%}.contenido{text-align:left;background-position:right bottom}.redes{text-align:right}.t1{font-size:3em;font-weight:700}.t2{font-size:1.5em;font-weight:300}.copy{text-align:right}.firsNew{height:420px}}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .logoPrincipal {
+    text-align: left;
+    float: left;
+  }
+  .logoPrincipal img {
+    max-width: 100%;
+  }
+  .contenido {
+    text-align: left;
+    background-position: right bottom;
+  }
+  .redes {
+    text-align: right;
+  }
+  /*FUENTES*/
+  .t1 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+  .t2 {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  /**/
+  .copy {
+    text-align: right;
+  }
+  .firsNew {
+    height: 420px;
+  }
+  .btn-encontrar {
+    color: #8FB12C;
+    margin-top: 0em;
+  }
+  .busqueda {
+    height: 45px;
+  }
+}
+/* Medium devices (desktops, 992px and up) 
+@media (min-width: 992px) { ... }
+
+@media (min-width: 1200px) { ... }*/

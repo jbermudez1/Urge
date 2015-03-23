@@ -9,10 +9,10 @@
                         <span class="t2">EN SINALOA, HAY</span><br>
                         <span class="t1">FACILIDAD PARA HACER NEGOCIOS</span><br><br>
                         <p class="t2">Encuentra rapidamente el trámite que buscas, por sector, rubro, o tamaño de tu empresa.</p>
-                        <article class="redes visible-xs">
+<!--                         <article class="redes visible-xs">
                             <a hreft=""><i class="fa fa-facebook fa-2x"></i></a>
                             <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-                        </article>
+                        </article> -->
                     </article>
                     <article id="" class="filtros">
                         {!! Form::open(['url' => 'guias','method' => 'POST']) !!}
@@ -40,17 +40,21 @@
                             </div>
                         {!! Form::close() !!}
                     </article>
-                    <article class="buscador">
-                        {!! Form::open(['url' => 'guias','method' => 'POST','role'=>'form']) !!}
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-9">
-                                    <input type="text" class="form-control" name="search" placeholder="Eje. Permiso de construcción en Culiacán" required="required">
-                                </div>
-                                <div class="col-xs-12 col-sm-3 hidden-xs">
-                                    <button type="submit" class="btn btn-encontrar">Encontrar</button>
-                                </div>
-                            </div>
-                        {!! Form::close() !!}
+                    <article class="busqueda">
+                        <div class="buscador">
+                                
+                                    {!! Form::open(['url' => 'guias','method' => 'POST','role'=>'form']) !!}
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-9">
+                                                <input type="text" class="form-control" name="search" placeholder="Eje. Permiso de construcción en Culiacán" required="required">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3">
+                                                <button type="submit" class="btn btn-encontrar">Encontrar</button>
+                                            </div>
+                                        </div>
+                                    {!! Form::close() !!}
+                            
+                        </div>
                     </article>
                 </div>
                 <div class="col-sm-6 hidden-xs">

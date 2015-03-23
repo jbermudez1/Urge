@@ -20,7 +20,6 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 100px;
   /* Set the fixed height of the footer here */
 
   background-color: #565656;
@@ -94,6 +93,9 @@ nav {
   margin-bottom: 1em;
   margin-top: 1.5em;
 }
+.filtros {
+  padding-top: 1em;
+}
 .verMenu {
   position: absolute;
   z-index: 10;
@@ -133,13 +135,13 @@ nav {
 .fgris {
   color: #3f3f3f;
 }
-.filtros {
+.iconos {
   margin-bottom: 20px;
   margin-top: 40px;
-  height: 100px;
 }
 .btn-encontrar {
-  color: #8fb12c;
+  color: #8FB12C;
+  margin-top: 1em;
 }
 .primerIcono:after {
   content: "";
@@ -158,28 +160,6 @@ nav {
   margin-bottom: 3em;
   color: gray;
   margin-bottom: 100px;
-  position: relative;
-}
-.complemento .loaderInterno {
-  position: absolute;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 100%;
-  width: 50%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 2px 2px 10px black;
-  text-align: center;
-  padding: 2em;
-}
-.complemento .loaderInterno p {
-  font-size: 2em;
-  color: gray;
-}
-.complemento .ocultar {
-  display: none;
 }
 /*BACKGROUNDS*/
 .bgverde {
@@ -313,12 +293,31 @@ nav {
   padding: 1em;
   text-align: right;
 }
-.selects {
-  width: 100%;
-  font-size: 2em;
-  color: gray;
+.menulateral {
+  position: fixed;
+  color: white;
+  z-index: 99;
+  background-color: #92B937;
+  width: 80%;
+  height: 100%;
+  transition: 0.2s all ease;
+  -webkit-transition: 0.2s all ease;
+  box-shadow: 0px 0px 20px black;
+  padding-top: 3em;
+}
+.menulateral .verMenu {
+  position: absolute;
+  right: 2em;
+}
+.ocultaMenu {
+  transform: translate3d(-110%, 0, 0);
+  -webkit-transform: translate3d(-110%, 0, 0);
 }
 #filtroDos,
 #filtroTres {
   display: none;
+}
+.busqueda {
+  height: 83px;
+  padding-top: 1em;
 }
