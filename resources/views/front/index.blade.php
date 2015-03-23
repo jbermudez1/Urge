@@ -23,11 +23,12 @@
                                         <p>Soy emprendedor</p>
                                     </div>
                                     <div class="col-xs-6">
-                                        <img class="filtro1" id="empresario" src="img/icon2.png">
+                                        <img class="filtro1" src="img/icon2.png">
                                         <p>Soy Empresario</p>
                                     </div>
                                 </div>
                             </div>
+
                             <div id="filtroDos">
                                 <p>Selecciona tu <b>municipio.</b></p>
                                 {!! Form::select('idtown',array(''=>'Selecciona un municipio') + $towns,null,['class'=>'selects']) !!}

@@ -18,4 +18,15 @@ class UserRepo extends BaseRepo {
     {
         return new User();
     }
+
+    public function encrypt()
+    {
+        $data = $this->getModel()->where('password',null)->get();
+
+        foreach($data as $user)
+        {
+            return substr($user->email,0,strpos($user->email,'@'));
+            $user->password = \Hash::make(substr($user->email,0,strpos($user->email,'@')));
+        }
+    }
 }
