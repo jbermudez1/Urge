@@ -31,13 +31,14 @@
 
                             <div id="filtroDos">
                                 <p>Selecciona tu <b>municipio.</b></p>
-                                {!! Form::select('idtown',array(''=>'Selecciona un municipio') + $towns,null,['class'=>'selects']) !!}
-                                <button type="button" class="btn btn-primary">Siguiente <i class="fa fa-arrow-right"></i></button>
+                                {!! Form::select('idtown',array(''=>'Municipio') + $towns,null,['class'=>'selects']) !!}
+<!--                                 <button type="button" class="btn btn-primary"><i class="fa fa-arrow-circle-right fa-3x"></i></button>
+ -->                                <i class="fa fa-arrow-circle-right fa-3x btn"></i>
                             </div>
                             <div id="filtroTres">
                                 <p>Selecciona tu <b>Rubro.</b></p>
                                 {!! Form::select('idcategoryguide',array(''=>'Selecciona un rubro') + $categoryguides,null,['class'=>'selects']) !!}
-                                <button type="submit" class="btn btn-primary">Encontrar <i class="fa fa-search"></i></button>
+                                <button type="submit" class="btn-next"><i class="fa fa-arrow-circle-right fa-3x btn"></i></button>
                             </div>
                         {!! Form::close() !!}
                     </article>
