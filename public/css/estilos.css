@@ -270,11 +270,23 @@ nav {
 }
 .boxNews .descNew {
   padding: 1em;
+  overflow: hidden;
+  min-height: 135px;
+}
+.boxNews .descNew p {
+  text-overflow: ellipsis;
 }
 .boxNews .descNew .fecha {
   font-style: italic;
   color: red;
   font-size: 0.8em;
+}
+.boxNews .descNew .txtNew {
+  height: 80px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
 }
 .boxNews .columna {
   float: left;
@@ -368,4 +380,7 @@ nav {
 }
 .copy a:hover {
   color: black!important;
+}
+.viewNoticias {
+  padding-bottom: 1em;
 }

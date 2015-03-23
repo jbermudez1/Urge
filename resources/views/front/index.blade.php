@@ -131,7 +131,7 @@
             </article>
             <article class="noticias">
                 <p class="verNoticias text-center">
-                    <a href="#">Ver noticias</a>
+                    <a href="/noticias">Ver noticias</a>
                 </p>
             </article>
         </div>

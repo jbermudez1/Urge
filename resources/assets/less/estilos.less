@@ -296,6 +296,7 @@ opacity: 0.3;
   .box;
   overflow: hidden;
   position: relative;
+
   .imgNewHor{
     // background-image: url(../img/noticia2.jpg);
     height: 200px;
@@ -310,10 +311,22 @@ opacity: 0.3;
   }
   .descNew{
     padding: 1em;
+    overflow: hidden;
+      min-height: 135px;
+    p{
+      text-overflow: ellipsis
+    }
     .fecha {
       font-style: italic;
       color: red;
       font-size: 0.8em;
+    }
+    .txtNew {
+      height: 80px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    direction: ltr;
     }
   }
   .columna{
@@ -410,3 +423,13 @@ opacity: 0.3;
     }
   }
 }
+.viewNoticias{
+  padding-bottom: 1em;
+}
+
+
+
+
+
+
+
