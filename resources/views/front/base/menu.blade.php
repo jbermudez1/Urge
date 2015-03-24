@@ -19,7 +19,7 @@
         <div class="verMenu visible-xs">
             <i class="fa fa-bars fa-2x"></i>
         </div>
-        <a href="home">
+        <a href="/home">
             <figure class="logoPrincipal"><img src="{{ asset('img/logo.jpg') }}" alt=""/></figure>
         </a>    
         <ul class="menu hidden-xs">

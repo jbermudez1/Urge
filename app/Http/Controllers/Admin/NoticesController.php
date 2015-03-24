@@ -19,6 +19,7 @@ class NoticesController extends CrudController {
         'id_user' => 'required',
         'title' => 'required',
         'description' => 'required',
+        'image' => 'image|max:20000'
     );
     protected $module = '_notices';
 

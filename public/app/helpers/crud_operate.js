@@ -4,13 +4,18 @@ $('[data-toggle="tooltip"], .enable-tooltip').tooltip({container: 'body', animat
 $('#btn-save').click(function(e){
     if($('#form-create').valid()){
         $('#btn-save').prop('disabled',true);
-        CRUD.action('#form-create', function(){
-            setTimeout(function(){
-                $(window.$contenedor).load(CRUD.url_base,function(){
-                    $('#modal-create').modal('hide');
-                    $('.modal-backdrop').remove();
-                });
-            },2000)
+        Helper.blockDiv('#modal-create  .modal-content');
+        CRUD.action('#form-create', function(response){
+            Helper.unblockDiv('#modal-create  .modal-content');
+            if(response.success) {
+                setTimeout(function(){
+                    $(window.$contenedor).load(CRUD.url_base,function(){
+                        $('#modal-create').modal('hide');
+                        $('.modal-backdrop').remove();
+                    });
+                },2000)
+            }
+
             $('#btn-save').prop('disabled',false);
         });
     }
