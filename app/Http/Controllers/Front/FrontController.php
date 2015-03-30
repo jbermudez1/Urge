@@ -75,7 +75,10 @@ class FrontController extends Controller {
     {
         return view('front.oficinas');
     }
-
+    function getRegulaciones()
+    {
+        return view('front.regulaciones');
+    }
     function getNoticias()
     {
         $notices = $this->noticeRepo->getOrderByDate();

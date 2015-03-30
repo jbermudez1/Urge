@@ -1,9 +1,14 @@
 @extends('front.base.layout')
 
 @section('content')
+    <section class="contenidoInterno">
+        <div class="container">
+            <h4>Comisión estatal de gestión empresarial y reforma regularoria.-</h4>
+        </div>
+    </section>
     <section class="complemento">
         <div class="container">
-            <span class="t2 fverde">URGE.- </span>Unidad Rápida de Gestión Empresarial.
+           <!--  <span class="t2 fverde">URGE.- </span>Unidad Rápida de Gestión Empresarial. -->
             <article class="accesos">
                 <div class="row boxes">
                    <!--  <div class="col-xs-12"> -->
@@ -51,11 +56,11 @@
                     <!--  -->
                 </div>
             </article>
-            <article class="noticias">
+<!--             <article class="noticias">
                 <p class="verNoticias text-center">
                     <a href="#">Ver noticias</a>
                 </p>
-            </article>
+            </article> -->
         </div>
     </section>
 @stop
