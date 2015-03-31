@@ -16,7 +16,7 @@ use Illuminate\Contracts\Auth\Registrar;
 trait AuthenticateUsers {
 
     protected $loginPath ='/admin/login';
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/admin';
 
     /**
      * The Guard implementation.
@@ -134,7 +134,7 @@ trait AuthenticateUsers {
             return $this->redirectPath;
         }
 
-        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/admin';
     }
 
     /**
