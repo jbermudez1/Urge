@@ -1,47 +1,47 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yoel
- * Date: 8/12/14
- * Time: 18:13
- */
-
 namespace App\Helpers;
 
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 
-class UploadX {
-    public static  function uploadFile($file,$folder,$name){
+class UploadX
+{
+    public static function uploadFile($file, $folder, $name)
+    {
         $extension = $file->getClientOriginalExtension();
+
         // Verify if directory exists
-        if (!is_dir($folder))
+        if(!is_dir($folder))
         {
             // Create directory
-            $oldmask = umask(0);
-            mkdir($folder, 0777);
-            umask($oldmask);
+            Storage::disk('local')->makeDirectory($folder);
         }
 
-        $url = $folder . '/' . $name . '.' . $extension;
-        if (File::copy($file,$url))
+        // Generate url to file
+        $url = '/' . $folder . '/' . $name . '.' . $extension;
+
+        // Put the file into folder
+        try
         {
+            Storage::disk('local')->put($url, File::get($file));
             return compact('url','extension');
         }
-        else
+        catch(\Exception $e)
         {
+            // If copy file is wrong
             return false;
         }
     }
 
-    public static function downloadFile($file,$name){
-        $file = public_path() . '/' . $file;
+    public static function downloadFile($url, $name)
+    {
+        $file = public_path() . '/' . $url;
         $headers = array();
-        return response()->download($file,$name,$headers);
+        return response()->download($file, $name, $headers);
     }
 
     public static function deleteFile($url)
     {
-        return File::delete($url);
+        return Storage::disk('local')->delete($url);
     }
-
-} 
+}

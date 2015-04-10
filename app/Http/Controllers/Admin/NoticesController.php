@@ -63,17 +63,13 @@ class NoticesController extends CrudController {
     public function update(Request $request,$id)
     {
         $record = $this->repo->findOrFail($id);
-        $data = $request->all();;
-        if($request->hasFile('image'))
+        $data = $request->all();
+
+        if(!$request->hasFile('image'))
         {
-            // Delete old image
-            $deleteImage = $this->repo->findOrFail($id);
-            UploadX::deleteFile($deleteImage->image);
-
-            // Upload new image
-            $image = UploadX::uploadFile($request->file('image'),'notices',$id);
-            $data['image'] = $image['url'];
-
+            $message = 'Ingrese una imagen';
+            $success = false;
+            return compact('success','message','record');
         }
         $validator = \Validator::make($data, $this->rules);
         $success = true;
@@ -81,6 +77,13 @@ class NoticesController extends CrudController {
 
         if ($validator->passes())
         {
+            // Delete old image
+            UploadX::deleteFile($record->image);
+
+            // Upload new image
+            $image = UploadX::uploadFile($request->file('image'),'notices',$id);
+            $data['image'] = $image['url'];
+
             $record = $this->repo->update($record, $data);
             return compact('success','message','record');
         }
@@ -88,7 +91,7 @@ class NoticesController extends CrudController {
         {
             $record=null;
             $success=false;
-            $message='Ocurrio un errord';
+            $message=$validator->messages();
             return compact('success','message','record');
         }
     }

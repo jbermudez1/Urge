@@ -10,14 +10,14 @@ use App\Helpers\FunctionX;
  * Time: 11:04
  */
 
-class CrudController extends Controller {
+abstract class CrudController extends Controller {
     protected $rules = array();
     protected $repo;
     protected $module = '';
     protected $root = 'admin';
     protected $code = '';
 
-    public function fields($data = null){}
+    abstract public function fields($data = null);
     public function updateRules($data =null) {}
 
     function __construct()

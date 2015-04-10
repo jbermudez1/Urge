@@ -87,5 +87,10 @@ abstract class BaseRepo implements BaseInterface {
                     ->get();
     }
 
+    public function lists()
+    {
+        return $this->getModel()
+                    ->lists('description','id');
+    }
 
 }

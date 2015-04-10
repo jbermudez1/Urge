@@ -21,7 +21,7 @@ class Guide  extends BaseModel {
         return $this->hasOne('App\Models\User','id','id_user');
     }
 
-    public function categoryguide()
+    public function category_guide()
     {
         return $this->hasOne('App\Models\CategoryGuide','id','id_category_guide');
     }
