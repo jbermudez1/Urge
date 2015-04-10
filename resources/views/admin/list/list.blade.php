@@ -10,7 +10,6 @@
                 <div class="row">
                     <div class="col-sm-12 text-right">
                         @section('buttons')
-
                             <a href="#modal-create" class="btn btn-effect-ripple btn-important" data-toggle="modal">@yield('button-create-text','Nuevo')</a>
                         @show
                     </div>

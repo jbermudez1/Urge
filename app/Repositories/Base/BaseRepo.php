@@ -35,7 +35,6 @@ abstract class BaseRepo implements BaseInterface {
                     ->first();
     }
 
-
     public function findWithRelations($id)
     {
         return $this->getModel()
@@ -78,6 +77,15 @@ abstract class BaseRepo implements BaseInterface {
     {
         return $this->getModel()
                     ->all();
+    }
+
+    public function getByField($field, $value, $comparator = '=', $columns = array('*'))
+    {
+        return $this->getModel()
+            ->with($this->relations)
+            ->where($field,$comparator,$value)
+            ->select($columns)
+            ->get();
     }
 
     public function getWithRelations()

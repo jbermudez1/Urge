@@ -19,33 +19,33 @@ class FormX {
         return new static;
     }
 
-    public function input($name,$label,$placeholder,$value="",$input="text")
+    public function input($name, $label, $placeholder, $value="", $input="text")
     {
         $this->body .= (string) view('admin.forms.input', compact('name', 'label', 'input', 'placeholder', 'value'));
         return $this;
     }
 
-    public function checkbox($name,$label,$value = false,$col="12",$class="success")
+    public function checkbox($name, $label, $value = false, $col="12", $class="success")
     {
-        $this->body .= (string) view('admin.forms.checkbox',compact('name','label','value','class','col'));
+        $this->body .= (string) view('admin.forms.checkbox',compact('name', 'label', 'value', 'class', 'col'));
         return $this;
     }
 
-    public function select($name,$label, $list,$value=0,$default = 'Elija un valor',$width = 250)
+    public function select($name ,$label, $list, $value=0, $default = 'Elija un valor', $width = 250)
     {
-        $this->body .= (string) view('admin.forms.select',compact('name','list','default','width','label','value'));
+        $this->body .= (string) view('admin.forms.select', compact('name', 'list', 'default', 'width', 'label', 'value'));
         return $this;
     }
 
-    public function hidden($name,$value)
+    public function hidden($name, $value)
     {
-        $this->body .= (string) view('admin.forms.hidden',compact('name','value'));
+        $this->body .= (string) view('admin.forms.hidden', compact('name', 'value'));
         return $this;
     }
 
     public function textarea($name, $label, $placeholder, $value="",$rows= 3)
     {
-        $this->body .= (string) view('admin.forms.textarea',compact('name','label','value','placeholder','rows'));
+        $this->body .= (string) view('admin.forms.textarea', compact('name', 'label', 'value', 'placeholder', 'rows'));
         return $this;
     }
 

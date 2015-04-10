@@ -13,7 +13,7 @@
         <h4 class="text-center">Informacion</h4>
        <span><strong>Municipio:</strong> {{ $data->town->description }}</span> <br/>
        <span><strong>Guia:</strong> {{ $data->guide->description }}</span> <br/>
-       <span><strong>Description:</strong> {{ $data->description }}</span>
+       <span><strong>Descripcion:</strong> {{ $data->description }}</span>
        <br/> <br/>
    </div>
    <table class="table table-bordered table-detail">
@@ -22,22 +22,27 @@
            <th>Tramite</th>
            <th>Descripcion</th>
            <th>Lugar</th>
+           <th>URL</th>
        </tr>
        </thead>
        <tbody>
        @foreach($data->procedures as $value)
-
-           <tr>
-               <th>{{ $value->procedure->title }}</th>
-               <th>{{ $value->procedure->description }}</th>
-               <th>
-                   @if($value->procedure->type == "town")
-                       Municipio
-                   @else
-                       Estado
-                   @endif
-               </th>
-           </tr>
+           @if($value->is_enabled)
+               <tr>
+                   <th>{{ $value->procedure->title }}</th>
+                   <th>{{ $value->procedure->description }}</th>
+                   <th>
+                       @if($value->procedure->type == "town")
+                           Municipio
+                       @else
+                           Estado
+                       @endif
+                   </th>
+                   <th>
+                       <a href="{{ $value->url }}" target="_blank">{{ $value->url }}</a>
+                   </th>
+               </tr>
+           @endif
        @endforeach
        </tbody>
    </table>

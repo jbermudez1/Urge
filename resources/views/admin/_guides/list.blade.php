@@ -34,7 +34,7 @@
     @endforeach
 @stop
 
-@include('admin._procedures.create',compact('fields'))
+@include('admin._guides.create',compact('fields'))
 
 <div id="div-modal"></div>
 <script>

@@ -4,8 +4,8 @@
     Lineamientos para Guias
 @stop
 
-@section('button-create-text')
-    Nuevo Lineamiento
+@section('buttons')
+    <a id="btn-new" href="#" class="btn btn-effect-ripple btn-important" >Nuevo Lineamiento</a>
 @stop
 
 @section('list-content')
@@ -32,8 +32,6 @@
         </tr>
     @endforeach
 @stop
-
-{{--@include('admin._linesguides.create',compact('fields'))--}}
 
 <div id="div-modal"></div>
 @stop

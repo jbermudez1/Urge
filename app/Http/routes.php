@@ -19,8 +19,11 @@ Route::get('/guias/{id}','Front\FrontController@getGuiaUnica');
 Route::group(['prefix'=>'admin','middleware'=>'auth','namespace'=>'Admin'], function(){
     Route::get('/','AdminController@index');
 
-    Route::get('guidelines','GuidelinesController@getList');
+    Route::get('guidelines/create','GuidelinesController@getCreate');
+    Route::post('guidelines/create','GuidelinesController@postCreate');
+    Route::get('guidelines/','GuidelinesController@getList');
     Route::get('guidelines/{id}','GuidelinesController@getDetail');
+    Route::get('guidelines/loadGuides/{id}','GuidelinesController@getGuides');
 
     Route::resource('categoryguides','CategoryGuidesController');
     Route::resource('guides','GuidesController');

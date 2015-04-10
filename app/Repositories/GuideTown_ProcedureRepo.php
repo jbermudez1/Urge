@@ -6,7 +6,7 @@
  * Time: 2:02
  */
 
-namespace app\Repositories;
+namespace App\Repositories;
 
 
 use App\Models\GuideTown_Procedure;

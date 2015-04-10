@@ -1,3 +1,14 @@
 vendor
 public/notices
-/public/notices/*
+*.DS_Store
+public/notices/*.jpg
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes
+.idea/Urge.iml
+.idea/vcs.xml
+.idea/workspace.xml
+public/notices/1.jpg
+public/notices/2.jpg
+public/notices/3.jpg
