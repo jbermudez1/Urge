@@ -19,7 +19,7 @@ class GuideTown extends BaseModel {
 
     public function guide()
     {
-        return $this->hasOne('App\Models\Guide','id','id_guide')->with('categoryguide');
+        return $this->hasOne('App\Models\Guide','id','id_guide')->with('category_guide');
     }
 
     public function town()

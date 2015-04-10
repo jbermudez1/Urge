@@ -5,32 +5,38 @@
     "icon"  : "users",
     "type"  : "administrator"
   },
+  "Lineamientos de Guias": {
+    "code"  : "003",
+    "route" : "guidelines",
+    "icon"  : "file-text-o",
+    "type"  : "administrator"
+  },
   "Noticias": {
-    "code"  : "002",
+    "code"  : "004",
     "route" : "notices",
     "icon"  : "newspaper-o",
     "type"  : "administrator"
   },
   "Municipios": {
-    "code"  : "003",
+    "code"  : "005",
     "route" : "towns",
     "icon"  : "building",
     "type"  : "administrator"
   },
   "Tramites": {
-    "code"  : "004",
+    "code"  : "006",
     "route" : "procedures",
     "icon"  : "book",
     "type"  : "administrator"
   },
   "Categorias de Guias": {
-    "code"  : "005",
+    "code"  : "007",
     "route" : "categoryguides",
     "icon"  : "list",
     "type"  : "administrator"
   },
   "Guias": {
-    "code"  : "005",
+    "code"  : "008",
     "route" : "guides",
     "icon"  : "list",
     "type"  : "administrator"
