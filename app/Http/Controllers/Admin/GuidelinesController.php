@@ -94,6 +94,73 @@ class GuidelinesController extends Controller {
         }
     }
 
+    public function getEdit($id)
+    {
+        $data = $this->guideTownRepo->findByIdWithRelations($id);
+        $towns = $this->townRepo->lists();
+        $guides = $this->guideRepo->lists();
+
+        $except = array_map(function($value) {
+            return $value["id_procedure"];
+        }, $data->procedures->toArray());
+
+        $procedures_new = $this->procedureRepo->getExcept($except);
+
+        return view('admin._guidelines.edit', compact('data', 'towns', 'guides', 'procedures_new'));
+    }
+
+    public function postEdit($id, Request $request)
+    {
+        $guidetown = $this->guideTownRepo->findOrFail($id);
+        $guidetown_data = $request->only('description');
+
+        $procedures_data = $request->get('procedures');
+
+        try
+        {
+            \DB::beginTransaction();
+
+            $guidetown = $this->guideTownRepo->update($guidetown, $guidetown_data);
+
+            foreach ($procedures_data as $procedure) {
+                if((int) $procedure['id_detail'] > 0)
+                {
+                    $guidetown_procedure = $this->guideTownProcedureRepo->findOrFail($procedure['id_detail']);
+                    $this->guideTownProcedureRepo->update($guidetown_procedure, [
+                        'is_enabled' => ($procedure['is_enabled'] == "true") ? true : false,
+                        'url' => $procedure['url']
+                    ]);
+                }
+                else
+                {
+                    $this->guideTownProcedureRepo->create([
+                        'id_guide_town' => $guidetown->id,
+                        'id_procedure' => $procedure['id_procedure'],
+                        'is_enabled' => ($procedure['is_enabled'] == "true") ? true : false,
+                        'url' => $procedure['url']
+                    ]);
+                }
+            }
+
+            \DB::commit();
+
+            return [
+                'success' => true,
+                'message' => 'Lineamiento actualizado exitosamente'
+            ];
+        }
+        catch(\Exception $e)
+        {
+            \DB::rollback();
+
+            return [
+                'ex' => $e->getMessage(),
+                'success' => false,
+                'message' => 'Ocurrio un error al intentar actualizar el lineamiento'
+            ];
+        }
+    }
+
     public function getGuides($id) {
         $data = $this->guideTownRepo->getByField('id_town',$id,'=',['id_guide']);
         return compact('data');

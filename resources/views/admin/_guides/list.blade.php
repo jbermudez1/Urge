@@ -39,7 +39,7 @@
 <div id="div-modal"></div>
 <script>
     $(function(){
-        CRUD.url_base = 'admin/procedures';
+        CRUD.url_base = 'admin/guides';
         Helper.rules = {
             'title':{ required : true },
             'description'  : { required  : true },

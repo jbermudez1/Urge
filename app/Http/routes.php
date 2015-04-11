@@ -21,6 +21,8 @@ Route::group(['prefix'=>'admin','middleware'=>'auth','namespace'=>'Admin'], func
 
     Route::get('guidelines/create','GuidelinesController@getCreate');
     Route::post('guidelines/create','GuidelinesController@postCreate');
+    Route::get('guidelines/edit/{id}','GuidelinesController@getEdit');
+    Route::post('guidelines/edit/{id}','GuidelinesController@postEdit');
     Route::get('guidelines/','GuidelinesController@getList');
     Route::get('guidelines/{id}','GuidelinesController@getDetail');
     Route::get('guidelines/loadGuides/{id}','GuidelinesController@getGuides');

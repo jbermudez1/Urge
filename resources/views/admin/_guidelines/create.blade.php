@@ -12,15 +12,15 @@
     {!! Form::open(['url' => 'admin/guidelines/create','id'=>'form-create','method' => 'POST','class'=>'form-horizontal']) !!}
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="form-group">
-            <label class="col-md-3 control-label" for="idtown">Municipio:</label>
+            <label class="col-md-3 control-label" for="id_town">Municipio:</label>
             <div class="col-md-9">
-                {!! Form::select('idtown',[''=>'Eliga un Municipio']  + $towns,null,['class'=>'select-chosen form-control']) !!}
+                {!! Form::select('id_town',[''=>'Eliga un Municipio']  + $towns,null,['class'=>'select-chosen form-control']) !!}
             </div>
         </div>
         <div class="form-group">
-            <label class="col-md-3 control-label" for="idguide">Guia:</label>
+            <label class="col-md-3 control-label" for="id_guide">Guia:</label>
             <div class="col-md-9">
-                {!! Form::select('idguide',[''=>'Eliga una Guia']  + $guides,null,['class'=>'select-chosen form-control']) !!}
+                {!! Form::select('id_guide',[''=>'Eliga una Guia']  + $guides,null,['class'=>'select-chosen form-control']) !!}
             </div>
         </div>
         <div class="form-group">
@@ -56,7 +56,7 @@
                             </div>
                         </td>
                         <td>
-                            <input type="text" class="url form-control"/>
+                            <input type="text" class="link form-control"/>
                             <input type="hidden" class="id" value="{{ $procedure->id }}"/>
                         </td>
                     </tr>
@@ -75,12 +75,12 @@
 <script>
     $(function(){
         Helper.rules = {
-            'idtown':{ required : true },
-            'idguide'  : { required  : true }
+            'id_town':{ required : true },
+            'id_guide'  : { required  : true }
         };
         Helper.messages = {
-            'idtown':{ required : 'Debe elegir un municipio' },
-            'idguide' : { required : 'Debe elegir una guia' }
+            'id_town':{ required : 'Debe elegir un municipio' },
+            'id_guide' : { required : 'Debe elegir una guia' }
         }
         Helper.validate('#form-create');
     })

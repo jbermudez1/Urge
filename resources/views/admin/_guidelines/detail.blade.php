@@ -14,7 +14,7 @@
        <span><strong>Municipio:</strong> {{ $data->town->description }}</span> <br/>
        <span><strong>Guia:</strong> {{ $data->guide->description }}</span> <br/>
        <span><strong>Descripcion:</strong> {{ $data->description }}</span>
-       <br/> <br/>
+       <br/>
    </div>
    <table class="table table-bordered table-detail">
        <thead>

@@ -19,4 +19,11 @@ class ProcedureRepo extends BaseRepo {
         return new Procedure();
     }
 
+    public function getExcept(array $ids = array())
+    {
+        return $this->getModel()
+                    ->whereNotIn('id', $ids)
+                    ->get();
+    }
+
 }

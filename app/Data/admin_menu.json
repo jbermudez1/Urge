@@ -1,8 +1,26 @@
 {
-  "Usuarios": {
+  "Municipios": {
     "code"  : "001",
-    "route" : "users",
-    "icon"  : "users",
+    "route" : "towns",
+    "icon"  : "building",
+    "type"  : "administrator"
+  },
+  "Tramites": {
+    "code"  : "002",
+    "route" : "procedures",
+    "icon"  : "book",
+    "type"  : "administrator"
+  },
+  "Categorias de Guias": {
+    "code"  : "003",
+    "route" : "categoryguides",
+    "icon"  : "list",
+    "type"  : "administrator"
+  },
+  "Guias": {
+    "code"  : "008",
+    "route" : "guides",
+    "icon"  : "list",
     "type"  : "administrator"
   },
   "Lineamientos de Guias": {
@@ -17,28 +35,10 @@
     "icon"  : "newspaper-o",
     "type"  : "administrator"
   },
-  "Municipios": {
+  "Usuarios": {
     "code"  : "005",
-    "route" : "towns",
-    "icon"  : "building",
-    "type"  : "administrator"
-  },
-  "Tramites": {
-    "code"  : "006",
-    "route" : "procedures",
-    "icon"  : "book",
-    "type"  : "administrator"
-  },
-  "Categorias de Guias": {
-    "code"  : "007",
-    "route" : "categoryguides",
-    "icon"  : "list",
-    "type"  : "administrator"
-  },
-  "Guias": {
-    "code"  : "008",
-    "route" : "guides",
-    "icon"  : "list",
+    "route" : "users",
+    "icon"  : "users",
     "type"  : "administrator"
   }
 }

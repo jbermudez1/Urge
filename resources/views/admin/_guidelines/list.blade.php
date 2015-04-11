@@ -27,6 +27,7 @@
             <td>{{ $value->guide->description }}</td>
             <td>{{ $value->description }}</td>
             <td class="text-center">
+                <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Editar" class="btn btn-effect-ripple btn-xs btn-success edit"><i class="fa fa-edit"></i></a>
                 <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Detalle" class="btn btn-effect-ripple btn-xs btn-info detail"><i class="fa fa-list"></i></a>
             </td>
         </tr>
