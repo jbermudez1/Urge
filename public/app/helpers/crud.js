@@ -73,6 +73,7 @@ var CRUD = function(){
                     data.append(input.prop('name'),input.prop('checked'))
                 }
                 else{
+                    console.log(input.prop('name'));
                     data.append(input.prop('name'), input.val());
                 }
             });

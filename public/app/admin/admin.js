@@ -74,6 +74,8 @@ var Admin = function() {
             $app = $.sammy(this.$contenedor, function() {
                 // Configure routes of Sammy
                 this.get('#/:route',function(context) {
+
+
                     var $route = this.params['route'];
                     console.info('Get route ---> ' + $route);
                     removeLinks();
@@ -84,6 +86,13 @@ var Admin = function() {
                         $('#page-content').addClass('inner-sidebar-left');
                     }else {
                         $('#page-content').removeClass('inner-sidebar-left');
+                    }
+
+                    if(typeof CKEDITOR !== 'undefined') {
+                        for(var name in CKEDITOR.instances) {
+                            console.log(name);
+                            CKEDITOR.remove(CKEDITOR.instances[name]);
+                        }
                     }
 
                     context.$element().load("admin/" + $route,function(){

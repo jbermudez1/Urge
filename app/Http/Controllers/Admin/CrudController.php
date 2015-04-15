@@ -46,10 +46,12 @@ abstract class CrudController extends Controller {
     /**
      * Store a newly created resource in storage.
      *
+     * @param Request $request
      * @return Response
      */
     public function store(Request $request)
     {
+
         $data = FunctionX::validateData($request->all());
 
         $validator = \Validator::make($data, $this->rules);
