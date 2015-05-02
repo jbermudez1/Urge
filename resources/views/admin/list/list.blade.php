@@ -14,9 +14,7 @@
                         @show
                     </div>
                 </div>
-
                 <br/>
-
                 <div class="table-responsive">
                     <table id="tbl-data" class="table table-striped table-bordered table-vcenter">
                         <thead>

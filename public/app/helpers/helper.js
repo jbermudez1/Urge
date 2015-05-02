@@ -1,7 +1,6 @@
 /*
  *  Document   : admin.js
- *  Author     : GTechnology
-
+ *  Author     : Yoel Monzon
  */
 
 var Helper = function() {

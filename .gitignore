@@ -12,3 +12,9 @@ public/notices/*.jpg
 public/notices/1.jpg
 public/notices/2.jpg
 public/notices/3.jpg
+
+*.jpg
+
+public/notices/3.png
+
+public/notices/4.jpg
