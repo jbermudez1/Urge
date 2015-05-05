@@ -227,7 +227,7 @@ nav {
 .boxFirst {
   background-image: url(../img/noticia1.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   height: 88px;
 }
 .firsBoxContainer {
@@ -262,11 +262,19 @@ nav {
 .boxNews .imgNewHor {
   height: 200px;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .boxNews .imgNewVer {
   background-size: cover;
   background-position: center;
   height: 200px;
+  background-repeat: no-repeat;
+}
+.boxNews .imgN {
+  background-size: cover;
+  height: 400px;
+  background-position: center;
 }
 .boxNews .descNew {
   padding: 1em;
@@ -361,6 +369,9 @@ nav {
   color: gray!important;
   width: 80%;
 }
+option {
+  text-transform: capitalize;
+}
 .busqueda {
   height: 83px;
   padding-top: 1em;
@@ -383,4 +394,10 @@ nav {
 }
 .viewNoticias {
   padding-bottom: 1em;
+}
+.formulario input,
+.formulario textarea,
+.formulario button {
+  width: 100%;
+  margin-top: 1em;
 }

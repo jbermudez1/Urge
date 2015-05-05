@@ -76,7 +76,10 @@ class FrontController extends Controller {
     {
         return view('front.nosotros');
     }
-
+       function getFormulario()
+    {
+        return view('front.formulario');
+    }
     function getOficinas()
     {
         return view('front.oficinas');

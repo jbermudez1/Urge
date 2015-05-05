@@ -4,6 +4,10 @@
     <section class="complemento">
         <div class="container">
             <span class="t2 fverde">Nuestras Oficinas.- </span>
+           <div class="text-center">
+                 <h3>Urges Sinaloa</h3>
+                    <hr>
+           </div>
             <article class="accesos">
                 <div class="row boxes">
                     <!--  -->
@@ -268,7 +272,7 @@
                                     Sinaloa, CP. 80129 Culiacán, Sin.
                                     <br><br>
                                     Tel. (667) 758 72 00 Ext. 2964<br>
-                                    <span class="fverde">Gerente :</span> Ing. José Vicente Valdez García<br>
+                                    <span class="fverde">Gerente :</span> Ing. Ezequiel Magaña Rodríguez<br>
                                     ezequiel.magana@sinaloa.gob.mx
                                 </p>
                             </div>
@@ -307,6 +311,7 @@
                         </div>
                     </div>
                     <!--  -->
+
                     <div class="col-xs-12 col-sm-4">
                         <div class="box">
                             <div class="boxHeader bgverde"></div>
@@ -318,7 +323,7 @@
 
                                     <br><br>Tel. (667) 758 7000 Ext. 2695
                                     <br>
-                                    <span class="fverde">Gerente :</span> Lic. Thalia Karamanos Ceceña
+                                    <span class="fverde">Gerente :</span> Lic. Leopoldo Guerrero Gómez
                                     <br>
                                 </p>
                             </div>
@@ -327,7 +332,10 @@
                     <!--  -->
 
                 </div>
-
+                <div class="text-center">
+                     <h3>Puntos para mover a México</h3>
+                    <hr>
+                </div>
 
                 <div class="row boxes">
                     <!--  -->
@@ -506,7 +514,7 @@
             </article>
             <article class="noticias">
                 <p class="verNoticias text-center">
-                    <a href="#">Ver noticias</p></a>
+                    <a href="/noticias">Ver noticias</p></a>
             </article>
         </div>
     </section>

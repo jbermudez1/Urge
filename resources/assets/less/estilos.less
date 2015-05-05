@@ -262,7 +262,7 @@ opacity: 0.3;
 .boxFirst {
   background-image: url(../img/noticia1.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
   height: 88px;
  }
 .firsBoxContainer {
@@ -301,13 +301,20 @@ opacity: 0.3;
     // background-image: url(../img/noticia2.jpg);
     height: 200px;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
     .imgNewVer{
     // background-image: url(../img/noticia3.jpg);
     background-size: cover;
     background-position: center;
     height: 200px;
-
+    background-repeat: no-repeat;
+  }
+  .imgN {
+    background-size: cover;
+    height: 400px;
+    background-position: center;
   }
   .descNew{
     padding: 1em;
@@ -403,6 +410,9 @@ opacity: 0.3;
     width: 80%;
   }
 }
+option{
+  text-transform:capitalize;
+}
 .busqueda {
   height: 83px;
   padding-top: 1em;
@@ -426,9 +436,12 @@ opacity: 0.3;
 .viewNoticias{
   padding-bottom: 1em;
 }
-
-
-
+.formulario {
+  input,textarea,button{
+    width: 100%;
+    margin-top: 1em;
+  }
+}
 
 
 

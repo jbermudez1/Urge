@@ -11,7 +11,7 @@
                 <div class="">
                     <div class="boxNews">
                         <!-- insertar imagen con estilo -->
-                        <div class="imgNewHor" style="background-image:url({{ asset($notice->image) }})"></div>
+                        <div class="imgN" style="background-image:url({{ asset($notice->image) }})"></div>
                         <div class="descNew">
                             <p class="fecha">{{ date('d/m/Y',strtotime($notice->created_at)) }}</p>
                             <p>

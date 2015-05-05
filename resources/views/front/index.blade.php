@@ -62,7 +62,7 @@
                 <div class="col-sm-6 hidden-xs">
                     <article class="redes">
                         <a hreft=""><i class="fa fa-facebook fa-2x"></i></a>
-                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <!-- <a href="#"><i class="fa fa-twitter fa-2x"></i></a> -->
                     </article>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                             <!-- div class="boxHeader bglila"></div> -->
                             <div class="boxContainer boxFirst"></div>
                             <div class="firsBoxContainer">
-                                A través del programa Mujeres Moviendo México el INADEM te ayuda a crear, crecer y consolidar tu empresa.
+                               El INADEM te ayuda a crear, crecer y consolidar tu empresa.
                             </div>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             <div class="boxHeader bglila"></div>
                             <div class="boxContainer">
                                 <a href="http://redfosin.com/" target="_blank">
-                                    <p class="tituloNoticia">Apoyos economicos</p>
+                                    <p class="tituloNoticia">Financiamiento</p>
                                     <img class="img-responsive" src="img/n3.jpg">
                                 </a>
                             </div>
@@ -121,8 +121,10 @@
                         <div class="box">
                             <div class="boxHeader bgazul"></div>
                             <div class="boxContainer">
-                                <p class="tituloNoticia">Trámites en problemas</p>
-                                <img class="img-responsive" src="img/n4.jpg">
+                                <a href="/formulario">
+                                    <p class="tituloNoticia">Trámites en problemas</p>
+                                    <img class="img-responsive" src="img/n4.jpg">
+                                </a>
                             </div>
                         </div>
 

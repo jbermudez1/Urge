@@ -9,7 +9,7 @@
     <section class="complemento">
         <div class="container">
             <span class="t2 fverde">¿No encuetras el tramite que buscas? </span>
-            Sigue estos cencillos pasos para lograrlo:
+            Sigue estos sencillos pasos para lograrlo:
 
         </div>
     </section>
