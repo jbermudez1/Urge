@@ -19,6 +19,12 @@ class FrontController extends Controller {
     protected $categoryGuideRepo;
     protected $guideTownRepo;
 
+    protected $rulesEmail = array(
+        'email' => 'required|email',
+        'asunto' => 'required|min:4',
+        'mensaje' => 'required|min:10'
+    );
+
     public function __construct(NoticeRepo $noticeRepo,
                                 TownRepo $townRepo,
                                 CategoryGuideRepo $categoryGuideRepo,
@@ -89,9 +95,42 @@ class FrontController extends Controller {
         return view('front.noticias',compact('notices'));
     }
 
+    function getContacto()
+    {
+        return view('front.contacto');
+    }
+
     function getNoticia($id)
     {
         $notice =  $this->noticeRepo->findOrFail($id);
         return view('front.noticia',compact('notice'));
+    }
+
+    function postSend(Request $request)
+    {
+        $data = $request->all();
+
+        $validator = \Validator::make($data, $this->rulesEmail);
+        if ($validator->fails())
+        {
+            return redirect('contacto')->withErrors($validator);
+        }
+        else
+        {
+            \Mail::send('emails.message', $data, function($message) use ($request)
+            {
+                //remitente
+                $message->from($request->email, $request->name);
+
+                //asunto
+                $message->subject($request->asunto);
+
+                //receptor
+                $message->to(env('CONTACT_MAIL'), env('CONTACT_NAME'));
+
+            });
+            return \View::make('front.success');
+        }
+
     }
 }

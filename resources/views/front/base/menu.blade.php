@@ -9,6 +9,7 @@
             <li><a href="/regulaciones">Regulaciones</a></li>
             <li><a href="/noticias">Noticias</a></li>
             <li><a href="/oficinas">Oficinas</a></li>
+            <li><a href="/contacto">Contacto</a></li>
         </ul>
         <div class="copy">
             2015. Design in <a href="http://proyeccione.com" target="_blank">Proyeccione</a>
@@ -29,6 +30,7 @@
             <li><a href="/regulaciones">Regulaciones</a></li>
             <li><a href="/noticias">Noticias</a></li>
             <li><a href="/oficinas">Oficinas</a></li>
+            <li><a href="/contacto">Contacto</a></li>
         </ul>
     </div>
 </nav>

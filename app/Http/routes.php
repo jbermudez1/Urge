@@ -10,11 +10,15 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+
+
+
 Route::get('/','Front\FrontController@getHome');
 
 // Routes for filter and search
 Route::post('/guias','Front\FrontController@getGuias');
 Route::get('/guias/{id}','Front\FrontController@getGuiaUnica');
+
 
 Route::group(['prefix'=>'admin','middleware'=>'auth','namespace'=>'Admin'], function(){
     Route::get('/','AdminController@index');
@@ -40,3 +44,8 @@ Route::controllers([
     'password' => 'Auth\PasswordController',
     '/' => 'Front\FrontController',
 ]);
+
+
+
+
+

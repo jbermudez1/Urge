@@ -15,7 +15,7 @@ return [
 	|
 	*/
 
-	'driver' => 'smtp',
+	'driver' => env('MAIL_DRIVER', 'smtp'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,8 +80,8 @@ return [
 	|
 	*/
 
-	'username' => null,
-
+	//'username' => 'postmaster@sandbox9eb11621901749b0ac0dd10047cbbeef.mailgun.org',
+    'username' => null,
 	/*
 	|--------------------------------------------------------------------------
 	| SMTP Server Password
@@ -93,7 +93,8 @@ return [
 	|
 	*/
 
-	'password' => null,
+	//'password' => 'key-90f9fa6ccfe8928f8017b39aadaf4753',
+    'password' => null,
 
 	/*
 	|--------------------------------------------------------------------------
