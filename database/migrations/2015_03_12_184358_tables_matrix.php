@@ -12,6 +12,13 @@ class TablesMatrix extends Migration {
 	 */
 	public function up()
 	{
+        //Table agency
+        Schema::create('agency',function(Blueprint $table){
+            $table->increments('id');
+            $table->string('description');
+            $table->timestamps();
+        });
+
         //Table States
         Schema::create('towns', function(Blueprint $table)
         {
@@ -92,6 +99,12 @@ class TablesMatrix extends Migration {
             $table->foreign('id_procedure')->references('id')->on('procedures');
 
             $table->string('url');
+
+            $table->decimal('price',8,2);
+
+            $table->integer('id_agency')->unsigned();
+            $table->foreign('id_agency')->references('id')->on('agency');
+
             $table->boolean('is_enabled')->default(false);
             $table->timestamps();
         });

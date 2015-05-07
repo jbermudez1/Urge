@@ -16,6 +16,8 @@
                             <td><b>Trámite</b></td>
                             <td><b>Descripcion</b></td>
                             <td><b>Lugar</b></td>
+                            <td><b>Precio:</b></td>
+                            <td><b>Dependencia:</b></td>
                             <td><b>Realizar Tramite:</b></td>
                         </tr>
                     </thead>
@@ -32,6 +34,13 @@
                                             Estado
                                         @endif
                                     </td>
+                                    <td>
+                                        @if($value->price === null)
+                                            Pendiente
+                                        @else
+                                            {{ $value->price }}</td>
+                                        @endif
+                                    <td>{{ $value->agency->description }}</td>
                                     <td><a href="{{ $value->url }}" target="_blank">Realizar Tramite</a></td>
                                 </tr>
                             @endif

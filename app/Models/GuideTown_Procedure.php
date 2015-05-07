@@ -12,9 +12,9 @@ namespace App\Models;
 class GuideTown_Procedure extends BaseModel {
 
     protected $table = 'guidetowns_procedures';
-    protected $fillable = ['id_guide_town','id_procedure','url','is_enabled'];
+    protected $fillable = ['id_guide_town','id_procedure','url','is_enabled','price','id_agency'];
 
-    public $relations = ['guidetown','procedure'];
+    public $relations = ['guidetown','procedure','agency'];
 
     public function guidetown()
     {
@@ -24,6 +24,11 @@ class GuideTown_Procedure extends BaseModel {
     public function procedure()
     {
         return $this->hasOne('App\Models\Procedure','id','id_procedure');
+    }
+
+    public function agency()
+    {
+        return $this->hasOne('App\Models\Agency','id','id_agency');
     }
 
 }
