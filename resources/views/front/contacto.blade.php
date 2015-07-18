@@ -1,11 +1,17 @@
 @extends('front.base.layout')
 
 @section('content')
+ <section class="contenidoInterno">
+        <div class="container">
+            <h4>Contacto.-</h4>
+        </div>
+    </section>
     <div class="container">
+        <br>  <br>
         <div class="row">
             <div class="col col-md-6 col-md-offset-3"   >
-                <div class="panel panel-default">
-                    <div class="panel-body">
+                <div class="panel-off panel-default-off">
+                    <div class="panel-body-off">
                         @if (count($errors) > 0)
                             <div class="alert alert-danger">
                                 <strong>Wooops!</strong> Hubo algunos problemas con los datos.<br><br>

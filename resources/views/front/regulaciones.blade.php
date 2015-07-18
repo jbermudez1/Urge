@@ -23,61 +23,61 @@
                       
                                 <tr >
                                     <td>Ahome</td>
-                                    <td class="text-right"><a href="descargas/home.doc"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/ahome.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Badiraguato</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/badiraguato.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Concordia</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/concordia.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Cosala</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/cosala.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Culiacán</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/culiacan.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>El fuerte</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/elfuerte.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Elota</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/elota.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Escuinapa</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/escuinapa.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Guasave</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/guasave.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
 
                                 <tr>
                                     <td>Mazatlán</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/mazatlan.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Mocorito</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/mocorito.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
 
                                 <tr>
-                                    <td>Navolat</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td>Navolato</td>
+                                    <td class="text-right"><a href="descargas/navolato.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>San ignacio</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/sanignacio.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
                                 <tr>
                                     <td>Sinaloa</td>
-                                    <td class="text-right"><a href="#"><i class="fa fa-file-text-o fa-2x"></i></a></td>
+                                    <td class="text-right"><a href="descargas/sinaloa.pdf" target="_blank"><i class="fa fa-file-text-o fa-2x"></i></a></td>
                                 </tr>
 
 
