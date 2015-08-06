@@ -3,7 +3,7 @@
 @section('content')
     <section class="contenidoInterno">
         <div class="container">
-            <h4>Comisión estatal de gestión empresarial y reforma regularoria.-</h4>
+            <h4>Comisión Estatal de Gestión Empresarial y Reforma Regulatoria.-</h4>
         </div>
     </section>
     <section class="complemento">
