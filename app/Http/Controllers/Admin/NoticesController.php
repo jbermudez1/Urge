@@ -72,8 +72,10 @@ class NoticesController extends CrudController {
         if ($validator->passes())
         {
             // Upload new image
-            $image = UploadX::uploadFile($request->file('image'),'notices',$id);
-            $data['image'] = $image['url'];
+            if($request->hasFile('image')) {
+                $image = UploadX::uploadFile($request->file('image'),'notices', $id);
+                $data['image'] = $image['url'];
+            }
 
             $record = $this->repo->update($record, $data);
             return compact('success','message','record');

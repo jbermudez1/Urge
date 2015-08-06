@@ -28,8 +28,8 @@
       <file leaf-file-name="NoticesController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/NoticesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3607595">
-              <caret line="90" column="27" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.5727848">
+              <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -804,8 +804,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/NoticesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3607595">
-          <caret line="90" column="27" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.5727848">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
           <folding />
         </state>
       </provider>
