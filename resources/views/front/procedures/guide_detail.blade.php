@@ -15,7 +15,7 @@
                         <tr>
                             <td><b>Trámite</b></td>
                             <td><b>Descripcion</b></td>
-                            <td><b>Lugar</b></td>
+                            <td><b>Tipo</b></td>
                             <td><b>Precio:</b></td>
                             <td><b>Dependencia:</b></td>
                             <td><b>Realizar Tramite:</b></td>
@@ -28,10 +28,12 @@
                                     <td>{{ $value->procedure->title }}</td>
                                     <td>{{ $value->procedure->description }}</td>
                                     <td>
-                                        @if($value->procedure->type == "town")
-                                            Municipio
-                                        @else
-                                            Estado
+                                        @if($value->procedure->type == "tow")
+                                            Municipal
+                                        @elseif( $value->procedure->type == "state" )
+                                            Estatal
+                                        @elseif( $value->procedure->type == "fede" )
+                                            Federal
                                         @endif
                                     </td>
                                     <td>
@@ -41,7 +43,7 @@
                                             {{ $value->price }}</td>
                                         @endif
                                     <td>{{ $value->agency->description }}</td>
-                                    <td><a href="{{ $value->url }}" target="_blank">Realizar Tramite</a></td>
+                                    <td><a href="#" target="_blank">Realizar Tramite</a></td>
                                 </tr>
                             @endif
                         @endforeach
