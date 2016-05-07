@@ -17,7 +17,7 @@
                             <td><b>Descripcion</b></td>
                             <td><b>Tipo</b></td>
                             <td><b>Precio:</b></td>
-                            <td><b>Dependencia:</b></td>
+                            <td><b>Dirección:</b></td>
                             <td><b>Realizar Tramite:</b></td>
                         </tr>
                     </thead>
@@ -36,14 +36,15 @@
                                             Federal
                                         @endif
                                     </td>
-                                    <td>
+                                     <td>
                                         @if($value->price === null)
                                             Pendiente
                                         @else
                                             {{ $value->price }}</td>
                                         @endif
-                                    <td>{{ $value->agency->description }}</td>
+                                    <td>Pendiente</td>
                                     <td><a href="#" target="_blank">Realizar Tramite</a></td>
+                          
                                 </tr>
                             @endif
                         @endforeach

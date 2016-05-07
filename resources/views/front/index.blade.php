@@ -78,9 +78,12 @@
                     <div class="col-xs-12 col-sm-4">
                         <div class="box">
                             <!-- div class="boxHeader bglila"></div> -->
-                            <div class="boxContainer boxFirst"></div>
+                            <!-- <div class="boxContainer boxFirst"></div>
                             <div class="firsBoxContainer">
                                El INADEM te ayuda a crear, crecer y consolidar tu empresa.
+                            </div> -->
+                            <div class="firsBoxContainer">
+                              Este portal permanecerá inactivo en acatamiento a la veda electoral del 3 de abril al 5 de junio de acuerdo al artículo 146 fracción XXXIV de la Ley de Instituciones y Procedimientos Electorales del Estado de Sinaloa que dice: “Periodo de veda para la propaganda oficial de acciones de gobierno por las autoridades de la administración pública centralizada y descentralizada, de los gobiernos federal, estatal y municipal".
                             </div>
                         </div>
                     </div>
@@ -89,8 +92,10 @@
                         <div class="box">
                             <div class="boxHeader bgverde"></div>
                             <div class="boxContainer">
-                                <p class="tituloNoticia">Vinculación</p>
-                                <img class="img-responsive" src="img/n1.jpg">
+                                <!-- <p class="tituloNoticia">Vinculación</p>
+                                <img class="img-responsive" src="img/n1.jpg"> -->
+                                <img class="img-responsive" src="img/blindado.png">
+
                             </div>
                         </div>
                     </div>
@@ -99,8 +104,9 @@
                         <div class="box">
                             <div class="boxHeader bgnaranja"></div>
                             <div class="boxContainer">
-                                <p class="tituloNoticia">Guía de <br>tramites</p>
-                                <img class="img-responsive" src="img/n2.jpg">
+                                <!-- <p class="tituloNoticia">Guía de <br>tramites</p>
+                                <img class="img-responsive" src="img/n2.jpg"> -->
+                                <img class="img-responsive" src="img/blindado.png">
                             </div>
                         </div>
                     </div>
@@ -110,8 +116,9 @@
                             <div class="boxHeader bglila"></div>
                             <div class="boxContainer">
                                 <a href="http://redfosin.com/" target="_blank">
-                                    <p class="tituloNoticia">Financiamiento</p>
-                                    <img class="img-responsive" src="img/n3.jpg">
+                                    <!-- <p class="tituloNoticia">Financiamiento</p>
+                                    <img class="img-responsive" src="img/n3.jpg"> -->
+                                    <img class="img-responsive" src="img/blindado.png">
                                 </a>
                             </div>
                         </div>
@@ -133,7 +140,7 @@
             </article>
             <article class="noticias">
                 <p class="verNoticias text-center">
-                    <a href="/noticias">Ver noticias</a>
+                    <!-- <a href="/noticias">Ver noticias</a> -->
                 </p>
             </article>
         </div>
