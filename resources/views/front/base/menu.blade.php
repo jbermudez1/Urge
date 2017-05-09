@@ -2,21 +2,12 @@
       <div class="verMenu">
          <i class="fa fa-bars fa-2x"></i>
       </div>
-        <!-- <ul>
+        <ul>
             <li><a href="/home">Inicio</a></li>
             <li><a href="/nosotros">CEGERR</a></li>
             <li><a href="/guiatramites">Trámites</a></li>
             <li><a href="/regulaciones">Regulaciones</a></li>
             <li><a href="/noticias">Noticias</a></li>
-            <li><a href="/oficinas">Oficinas</a></li>
-            <li><a href="/contacto">Contacto</a></li>
-        </ul> -->
-        <ul>
-            <li><a href="/home">Inicio</a></li>
-            <li><a href="/nosotros">CEGERR</a></li>
-            <li><a href="">Trámites</a></li>
-            <li><a href="">Regulaciones</a></li>
-            <li><a href="">Noticias</a></li>
             <li><a href="/oficinas">Oficinas</a></li>
             <li><a href="/contacto">Contacto</a></li>
         </ul>
@@ -35,9 +26,9 @@
         <ul class="menu hidden-xs">
             <li><a href="/home">Inicio</a></li>
             <li><a href="/nosotros">CEGERR</a></li>
-            <li><a href="">Trámites</a></li>
-            <li><a href="">Regulaciones</a></li>
-            <li><a href="">Noticias</a></li>
+            <li><a href="/guiatramites">Trámites</a></li>
+            <li><a href="/regulaciones">Regulaciones</a></li>
+            <li><a href="/noticias">Noticias</a></li>
             <li><a href="/oficinas">Oficinas</a></li>
             <li><a href="/contacto">Contacto</a></li>
         </ul>
