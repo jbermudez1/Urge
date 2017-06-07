@@ -14,11 +14,11 @@
                     <thead>
                         <tr>
                             <td><b>Trámite</b></td>
-                            <td><b>Descripcion</b></td>
-                            <td><b>Tipo</b></td>
+                            <td><b>Descripción</b></td>
                             <td><b>Precio:</b></td>
-                            <td><b>Dirección:</b></td>
-                            <td><b>Realizar Tramite:</b></td>
+                            <td><b>Requisitos</b></td>
+                            <td><b>Dependencia:</b></td>
+                            <!-- <td><b>Realizar Tramite:</b></td> -->
                         </tr>
                     </thead>
                     <tbody>
@@ -26,16 +26,7 @@
                             @if($value->is_enabled)
                                 <tr>
                                     <td>{{ $value->procedure->title }}</td>
-                                    <td>{{ $value->procedure->description }}</td>
-                                    <td>
-                                        @if($value->procedure->type == "tow")
-                                            Municipal
-                                        @elseif( $value->procedure->type == "state" )
-                                            Estatal
-                                        @elseif( $value->procedure->type == "fede" )
-                                            Federal
-                                        @endif
-                                    </td>
+                                    <td style="text-transform:lowercase;">{{ $value->procedure->description }}</td>
                                      <td>
                                         @if($value->price === null)
                                             Pendiente
@@ -43,7 +34,16 @@
                                             {{ $value->price }}</td>
                                         @endif
                                     <td>Pendiente</td>
-                                    <td><a href="#" target="_blank">Realizar Tramite</a></td>
+                                    <td>
+                                        @if($value->procedure->type == "town")
+                                            Municipal
+                                        @elseif( $value->procedure->type == "state" )
+                                            Estatal
+                                        @elseif( $value->procedure->type == "federal" )
+                                            Federal
+                                        @endif
+                                    </td>
+                                    <!-- <td><a href="#" target="_blank">Realizar Tramite</a></td> -->
                           
                                 </tr>
                             @endif

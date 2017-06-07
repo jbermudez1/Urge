@@ -14,9 +14,9 @@ class UserTableSeeder extends Seeder {
     {
         $userRepo = new UserRepo();
         $userRepo->create([
-            'first_name' => 'Yoel',
-            'last_name' => 'Monzon',
-            'email' => 'admin@hotmail.com',
+            'first_name' => 'Usuario',
+            'last_name' => 'Admin',
+            'email' => 'admin@mail.com',
             'password' => 'admin',
             'type' => 'administrator'
         ]);

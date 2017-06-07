@@ -110,7 +110,7 @@
                         <div class="box">
                             <div class="boxHeader bglila"></div>
                             <div class="boxContainer">
-                                <a href="http://redfosin.com/" target="_blank">
+                                <a href="img/fondo_compite.png" target="_blank">
                                     <p class="tituloNoticia">Financiamiento</p>
                                     <img class="img-responsive" src="img/n3.jpg">
                                 </a>

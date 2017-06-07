@@ -15,7 +15,7 @@
     <th class="text-center" style="width: 50px;">#</th>
     <th>Descripcion</th>
     <th>Categoria</th>
-    <th>Usuario</th>
+
     <th class="text-center" style="width: 75px;"><i class="fa fa-flash"></i></th>
 @stop
 
@@ -25,7 +25,7 @@
             <td class="text-center">{{ $key + 1 }}</td>
             <td>{{ $value->description }}</td>
             <td>{{ $value->category_guide->description }}</td>
-            <td>{{ $value->user->first_name . ' ' . $value->last_name }}</td>
+            
             <td class="text-center">
                 <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Editar" class="btn btn-effect-ripple btn-xs btn-success edit"><i class="fa fa-pencil"></i></a>
                 <a href="#" data-id="{{ $value->id }}" data-toggle="tooltip" title="Eliminar" class="btn btn-effect-ripple btn-xs btn-danger delete"><i class="fa fa-times"></i></a>
