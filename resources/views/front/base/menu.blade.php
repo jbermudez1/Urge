@@ -21,7 +21,7 @@
             <i class="fa fa-bars fa-2x"></i>
         </div>
         <a href="/home">
-            <figure class="logoPrincipal"><img src="{{ asset('img/logo.jpg') }}" alt=""/></figure>
+            <figure class="logoPrincipal"><img style="width: 170px" src="{{ asset('img/logo.jpg') }}" alt=""/></figure>
         </a>    
         <ul class="menu hidden-xs">
             <li><a href="/home">Inicio</a></li>

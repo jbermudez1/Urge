@@ -27,14 +27,14 @@
                                 <tr>
                                     <td>{{ $value->procedure->title }}</td>
                                     <td style="text-transform:lowercase;">{{ $value->procedure->description }}</td>
-                                     <td>
-                                        @if($value->price === null)
-                                            Pendiente
-                                        @else
+                                     <td style="min-width: 100px">
+                                       
+                                   
                                             {{ $value->price }}</td>
-                                        @endif
+                                 
                                     <td>Pendiente</td>
-                                    <td>
+                                    <td> {{ $value->dependency }}</td>
+                                   <!--  <td>
                                         @if($value->procedure->type == "town")
                                             Municipal
                                         @elseif( $value->procedure->type == "state" )
@@ -42,7 +42,7 @@
                                         @elseif( $value->procedure->type == "federal" )
                                             Federal
                                         @endif
-                                    </td>
+                                    </td> -->
                                     <!-- <td><a href="#" target="_blank">Realizar Tramite</a></td> -->
                           
                                 </tr>
